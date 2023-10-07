@@ -1,34 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
 import me3 from '/src/assets/me3.jpg'
+
+
 const About = () => {
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    if (isButtonClicked) {
-      typeWriter(" Assalomu Alaykum, my name is Muhammadqodir. I'm a skilled software developer with a passion for creating innovative solutions that make a positive impact on people's lives. With learning all the software skills I have as a self-taught, I have developed a deep understanding of what it takes to deliver high - quality software that meets the unique needs of each project. Whether you're an individual or a large corporation, I am committed to providing you with the best possible service and support. From initial consultation to final delivery I will work closely with you to ensure that your software meets your exact specifications and exceeds your expectations. So why wait? Contact me today to discuss your software needs and discover how I can help you achieve your goals 🤝 ");
-    }
-  }, [isButtonClicked]);
+    const [isButtonClicked, setIsButtonClicked] = useState(false);
+    const [message, setMessage] = useState('');
 
-  const typeWriter = (text) => {
-    let i = 0;
-    const speed = 40;
-    const type = () => {
-      if (i < text.length) {
-        setMessage((prevMessage) => prevMessage + text.charAt(i));
-        i++;
-        setTimeout(type, speed);
+     useEffect(() => {
+      if (isButtonClicked) {
+        typeWriter(" Hi there, my name is Muhammadqodir. I'm a skilled software developer with a passion for creating innovative solutions that make a positive impact on people's lives. With learning all the software skills I have as a self-taught, I have developed a deep understanding of what it takes to deliver high - quality software that meets the unique needs of each project. Whether you're an individual or a large corporation, I am committed to providing you with the best possible service and support. From initial consultation to final delivery I will work closely with you to ensure that your software meets your exact specifications and exceeds your expectations. So why wait? Contact me today to discuss your software needs and discover how I can help you achieve your goals 🤝 ");
       }
+    }, [isButtonClicked]);
+
+    const typeWriter = (text) => {
+      let i = 0;
+      const speed = 40;
+      const type = () => {
+        if (i < text.length) {
+          setMessage((prevMessage) => prevMessage + text.charAt(i));
+          i++;
+          setTimeout(type, speed);
+        }
+      };
+      type();
     };
-    type();
-  };
 
   return (
     <div
       name='about'
-      className="w-full min-h-screen flex py-10 md:flex-row flex-col items-center bg-[#7b617e]">
+      className="w-full mx-auto min-h-screen flex py-10 md:flex-row flex-col items-center bg-[#7b617e]">
          
        
       <motion.div
@@ -74,7 +76,7 @@ const About = () => {
         </div>
     
 
-        <div className='md:ml-[40px] text-justify md:text-base leading-7 mx-auto max-w-[1000px] w-full grid sm:grid-cols-2 gap-5 px-4'>
+        <div className='md:ml-[40px] text-justify md:text-base leading-7 mx-auto w-[300px] md:w-full md:px-0  grid sm:grid-cols-2 gap-5 '>
           <p className='text-slate-100'>{message}</p>
         </div>
       </motion.div>
