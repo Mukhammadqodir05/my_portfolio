@@ -1,23 +1,23 @@
 import React from 'react';
-import { Fade } from 'react-reveal';
+
 
 const Projects = () => {
   return (
     <div name='projects' className='w-full h-full md:h-[600px] bg-[#0a192f] py-20 text-gray-300 '>
       <div className=' p-4 flex flex-col md:mt-[-100px] md:items-center justify-center w-full h-full'>
        
-       <Fade bottom>
+    
         <div className='pb-8 text-center'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-600'>
           projects
           </p>
           <p className='py-6'>//These are my recent projects</p>
         </div>
-        </Fade>
+      
 
 
        <div className=" md:w-[900px] h-full grid sm:grid-cols-2 md:grid-cols-2 gap-4">   
-       <Fade bottom>     
+            
          <div
            style={{ backgroundImage: `url(${'/src/assets/projects/merc.png'})` }}
            className=" group container rounded-md 
@@ -47,9 +47,9 @@ const Projects = () => {
         </div>
        </div>
       </div>
-      </Fade>
+     
 
-    <Fade bottom>      
+      
        <div
            style={{ backgroundImage: `url(${'src/assets/projects/shop.png'})` }}
            className=" group container rounded-md 
@@ -79,7 +79,7 @@ const Projects = () => {
          </div>
         </div>
        </div>
-       </Fade>
+
       </div>
     
     </div>
