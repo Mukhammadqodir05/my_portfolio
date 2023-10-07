@@ -1,5 +1,7 @@
 import React from 'react';
 
+import merc from '/src/assets/projects/merc.png'
+import shop from '/src/assets/projects/shop.png'
 
 const Projects = () => {
   return (
@@ -19,7 +21,7 @@ const Projects = () => {
        <div className=" md:w-[900px] h-full grid sm:grid-cols-2 md:grid-cols-2 gap-4">   
             
          <div
-           style={{ backgroundImage: `url(${'/src/assets/projects/merc.png'})` }}
+           style={{ backgroundImage: `url(${merc})` }}
            className=" group container rounded-md 
                      flex justify-center text-center items-center mx-auto content-div ">
          
@@ -51,7 +53,7 @@ const Projects = () => {
 
       
        <div
-           style={{ backgroundImage: `url(${'src/assets/projects/shop.png'})` }}
+           style={{ backgroundImage: `url(${shop})` }}
            className=" group container rounded-md 
                      flex justify-center text-center items-center mx-auto content-div ">
          

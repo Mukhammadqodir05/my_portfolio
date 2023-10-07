@@ -3,12 +3,14 @@ import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
+import me4 from '/src/assets/me4.jpg'
 
 const Home = () => {
   const [nav, setNav] = useState(false);
   const hClick = () => setNav(!nav);
 
   return (
+
     <div
       name='home'
       className='bg-[#0a192f] min-h-screen flex py-36 md:flex-row flex-col items-center'
@@ -71,7 +73,7 @@ const Home = () => {
        <motion.img
       whileHover={{ rotate: -180 }}
       className='shadow-md shadow-[#bfe676] justify-center text-white border-2 hover:bg-pink-600 hov rounded-full md:w-7/12 h-full object-cover w-[70%] '
-     src='src/assets/me4.jpg'
+     src={me4}
      alt='Profile'/>
       </motion.div>
 

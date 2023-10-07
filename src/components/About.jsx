@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-
+import me3 from '/src/assets/me3.jpg'
 const About = () => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [message, setMessage] = useState('');
@@ -39,7 +39,7 @@ const About = () => {
 
       className=" flex-1 flex items-center justify-center object-cover h-full">
         <div className=' h-full sm:w-10/12  md:w-72 w-11/12 max-w-sm'>
-          <img className=" image py-10 w-[90%] image md:w-96 ml-6 " src='src/assets/me3.jpg' />
+          <img className=" image py-10 w-[90%] image md:w-96 ml-6 " src={me3} />
         </div>
       </motion.div>
       
