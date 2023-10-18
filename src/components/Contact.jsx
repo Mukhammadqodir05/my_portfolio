@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
+import { Fade } from 'react-reveal';
+
 import Swal from 'sweetalert2';
 
  const Contact = () => {
@@ -65,19 +67,20 @@ import Swal from 'sweetalert2';
           </div>
          
            
-           
+           <Fade bottom>
             <label>Name</label>
             <input className='rounded-sm border border-cyan-600 bg-[#ccd6f6] p-2 w-[100%]' required onChange={handleChange} placeholder='Enter your name here' type="text"  name="from_name" value={from_name} />
-        
-            
+            </Fade>
          
+            <Fade bottom>
             <label>Email</label>
-            <input className='rounded-sm border-cyan-600 border bg-[#ccd6f6] p-2 w-[100%]' required onChange={handleChange} Placeholder='Enter your email address' type="email" name="from_email" value={from_email} />
-            
+            <input className='rounded-sm border-cyan-600 border bg-[#ccd6f6] p-2 w-[100%]' required onChange={handleChange} placeholder='Enter your email address' type="email" name="from_email" value={from_email} />
+            </Fade>
            
+            <Fade bottom>
             <label>Message</label>
             <textarea className='border-cyan-600 border rounded-sm bg-[#ccd6f6]  h-[200px]' required onChange={handleChange} placeholder='Type your message here ...' name="message" value={message} />
-        
+            </Fade>
         
 
             <motion.div     

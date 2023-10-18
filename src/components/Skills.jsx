@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade, LightSpeed } from 'react-reveal';
 
 import css from '/src/assets/css.png'
 import github from '/src/assets/github.png'
@@ -20,48 +21,57 @@ const Skills = () => {
                    
                <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center text-cyan-300'>
            
+           <Fade bottom>
                     <div className='hover:scale-110 duration-500 shadow-md shadow-[#69a5ee] '>
                      
                     <img className='w-20 mx-auto' src={html} alt="HTML icon" />
                     <p className='my-4'>HTML</p>
                 </div>
+             </Fade>
              
             
-               
+               <Fade bottom>
                 <div className='shadow-md hover:scale-110 duration-500 shadow-[#69a5ee] '>
                      
                      <img className='w-20 mx-auto' src={css} alt="HTML icon" />
                       <p className='my-4'>CSS</p>
                 </div>  
-           
+                </Fade>
 
+                <Fade bottom>
                
                 <div
                    className='shadow-md hover:scale-110 duration-500 shadow-[#69a5ee] '>
                     <img  className='w-20 mx-auto' src={javascript}/>
                     <p className='my-4'>JavaScript</p>
                 </div>
+                </Fade >
          
                  
-             
+             <Fade bottom>
                  <div 
                   className='hover:scale-110 duration-500 shadow-md shadow-[#69a5ee] '>
                   
                     <img className='w-20 mx-auto' src={react}></img>
                     <p className='my-4 mx-auto'>React</p>
                  </div>
-                 
+                 </Fade>
+
+                 <Fade bottom>
                  <div
                   className='hover:scale-110 duration-500 shadow-md shadow-sm:3px shadow-[#69a5ee] transform '>
                     <img className='w-20 mx-auto' src={tailwind}></img>
                     <p className='my-4 mx-auto'>Tailwind Css</p>
                  </div>
+                 </Fade>
                
+               <Fade bottom>
                  <div
                    className='transform  hover:scale-110 duration-500 shadow-md  shadow-[#69a5ee]'>
                    <img className='w-20 mx-auto transform duration-300' src={github}></img>
                    <p className='my-4 mx-auto'>GitHub</p>
                 </div>
+                </Fade>
            
               
               </div>

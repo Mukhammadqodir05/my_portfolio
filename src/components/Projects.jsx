@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Fade } from 'react-reveal';
+
 import merc from '/src/assets/projects/merc.png'
 import shop from '/src/assets/projects/shop.png'
 
@@ -20,6 +22,7 @@ const Projects = () => {
 
        <div className=" md:w-[900px] h-full grid sm:grid-cols-2 md:grid-cols-2 gap-4">   
             
+            <Fade bottom>
          <div
            style={{ backgroundImage: `url(${merc})` }}
            className=" group container rounded-md 
@@ -49,9 +52,10 @@ const Projects = () => {
         </div>
        </div>
       </div>
+      </Fade>
      
 
-      
+      <Fade bottom>
        <div
            style={{ backgroundImage: `url(${shop})` }}
            className=" group container rounded-md 
@@ -81,9 +85,10 @@ const Projects = () => {
          </div>
         </div>
        </div>
+       </Fade>
+
 
       </div>
-    
     </div>
   </div>
   );
