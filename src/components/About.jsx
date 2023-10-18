@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import me3 from '/src/assets/me3.jpg'
 
 
@@ -33,38 +32,25 @@ const About = () => {
       className="w-full mx-auto min-h-screen flex py-10 md:flex-row flex-col items-center bg-[#7b617e]">
          
        
-      <motion.div
-          initial={{opacity: 0, scale: 0, x: -500 }}
-          whileInView = {{opacity: 1, scale: 1, x: 0}}
-          animate={{ x: 0 }}
-          transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
-
+      <div
+         
       className=" flex-1 flex items-center justify-center object-cover h-full">
         <div className=' h-full sm:w-10/12  md:w-72 w-11/12 max-w-sm'>
           <img className=" image py-10 w-[90%] image md:w-96 ml-6 " src={me3} />
         </div>
-      </motion.div>
+      </div>
       
        
-      <motion.div
-        initial={{opacity:0, scale: 0, x:500}}
-        whileInView={{opacity: 1, scale: 1, x: 0}}
-        animate={{ x: 0 }}
-        transition={{delay: 0.5, type: 'spring', stiffness:120 }}
-      >
+      <div>
         <button
           className='hover:scale-110 duration-500 md:mt-[500px] md:ml-[-413px] px-8 py-3  shadow-violet-400 flex items-center rounded-md shadow-md justify-center text-white border-2 hover:bg-violet-600 hover:border-blue-600'
           onClick={() => setIsButtonClicked(true)}>
             Read
         </button>
-     </motion.div>
+     </div>
 
      
-      <motion.div
-       initial={{opacity: 0, scale: 0, x:500}}
-       whileInView={{opacity:1, scale:1, x:0}}
-       animate={{ x: 0 }}
-       transition={{delay: 0.5, type: 'spring', stiffnes: 120}}
+      <div
        className='flex-1 md:h-[450px]'>
    
         <div className='py-10 text-center'>
@@ -79,7 +65,7 @@ const About = () => {
         <div className='md:ml-[40px] text-justify md:text-base leading-7 mx-auto w-[300px] md:w-full md:px-0  grid sm:grid-cols-2 gap-5 '>
           <p className='text-slate-100'>{message}</p>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
