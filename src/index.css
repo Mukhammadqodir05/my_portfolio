@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.h{
+  box-shadow: blueviolet;
+}
 
 .content-div {
     background-repeat: no-repeat;
@@ -10,10 +13,19 @@
     height: 250px;
 }
 
+.main {
+  background-image: linear-gradient(
+    to right,
+    #a82a8fcc,
+    hsla(240, 36%, 34%, 0.8)   
+)!important;
+}
+
+
 .content-div:hover {
     background-image: linear-gradient(
         to right,
-        rgba(168, 42, 143, 0.8),
+        #a82a8fcc,
         hsla(240, 36%, 34%, 0.8)   
     )!important;
 }

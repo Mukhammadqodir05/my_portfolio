@@ -6,7 +6,7 @@ import shop from '/src/assets/projects/shop.png'
 
 const Projects = () => {
   return (
-    <div name='projects' className='w-full h-full md:h-[600px] bg-[#0a192f] py-20 text-gray-300 '>
+    <div name='projects' className='main w-full h-full md:h-[600px] bg-[#0a192f] py-20 text-gray-300 '>
       <div className=' p-4 flex flex-col md:mt-[-100px] md:items-center justify-center w-full h-full'>
        
     

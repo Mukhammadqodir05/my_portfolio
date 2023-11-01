@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 import me4 from '/src/assets/me4.jpg'
 
+
 const Home = () => {
   const [nav, setNav] = useState(false);
   const hClick = () => setNav(!nav);
@@ -14,14 +15,14 @@ const Home = () => {
 
     <div
       name='home'
-      className='bg-[#0a192f] min-h-screen flex py-36 md:flex-row flex-col items-center'
+      className='main bg-[#0a192f] min-h-screen flex py-36 md:flex-row flex-col items-center'
     >
      
-       <div className='shadow-md shadow-violet-400 flex-1 bg-gradient-to-tr from-violet-600 rounded-2xl pl-4 w-[90%] md:ml-40 '>
+       <div className='shadow-md shadow-violet-400 flex-1 bg-gradient-to-tr from-violet-900 rounded-2xl pl-4 w-[90%] md:ml-40 '>
         <div className='text-center md:text-left'>
           <h1 className=' md:text-5xl text-2 md:leading-normal leading-10 text-white'>
             <span className=' text-teal-400 md:text-5xl'>
-              <span className='text-violet-600 '>Hi There👋, It is me </span>
+              <span className=' '>Hi There👋, It is me </span>
               <br />
             </span>
             <span>Muhammadqodir</span>

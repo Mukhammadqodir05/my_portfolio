@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { FaFacebook, FaInstagram, FaTelegram, FaTwitter,FaBars, FaTimes  } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTelegram, FaTwitter,FaBars, FaTimes, FaYoutube  } from 'react-icons/fa';
 
 
 const Nav_bar = () => {
@@ -53,9 +53,8 @@ const Nav_bar = () => {
             <a
               className='flex justify-between items-center w-full text-gray-100'
               href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank">
+                
               Twitter <FaTwitter size={30} />
             </a>
           </li>
@@ -63,20 +62,18 @@ const Nav_bar = () => {
             <a
               className='flex justify-between items-center w-full text-white'
               href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank">
+
               Facebook <FaFacebook size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-500 '>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-700 '>
             <a
               className='flex justify-between items-center w-full text-gray-100'
               href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram <FaInstagram size={30} />
+              target="_blank">
+
+              Youtube <FaYoutube size={30} />
             </a>
           </li>
 
@@ -84,9 +81,8 @@ const Nav_bar = () => {
             <a
               className='flex justify-between items-center w-full text-blue-500'
               href="https://www.telegram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank">
+
               Telegram <FaTelegram size={30} />
             </a>
           </li>
