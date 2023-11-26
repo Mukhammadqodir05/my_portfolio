@@ -4,8 +4,6 @@ import { FaFacebook, FaInstagram, FaTelegram, FaTwitter,FaBars, FaTimes, FaYoutu
 
 
 const Nav_bar = () => {
-  const [nav1, setNav1] = useState(false);
-  const hClick2 = () => setNav1(!nav1);
 
   const [nav, setNav] = useState(false);
   const hClick = () => setNav(!nav);
@@ -25,7 +23,7 @@ const Nav_bar = () => {
           <li className=' hover:text-teal-500 duration-300 hover:scale-110 font-bold cursor-pointe'>
              <Link activeClass='active' onClick={hClick} to='home' spy={true} smooth={true} offset={-250}  duration={400} > Home </Link>
           </li>
-          
+         
           <li className=' hover:text-teal-500 duration-300 hover:scale-110 font-bold cursor-pointer'>
               <Link activeClass='active'  onClick={hClick}  to='about' spy={true} smooth={true} offset={-50}  duration={400} > About </Link>
           </li>
