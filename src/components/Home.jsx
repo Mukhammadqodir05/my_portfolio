@@ -1,87 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import { HiArrowNarrowRight } from 'react-icons/hi';
-import { motion } from 'framer-motion';
-
+import React from 'react';
 
 import me4 from '/src/assets/me4.jpg'
 
 
 const Home = () => {
-  const [nav, setNav] = useState(false);
-  const hClick = () => setNav(!nav);
 
   return (
-
-    <div
-      name='home'
-      className='main bg-[#0a192f] min-h-screen flex py-36 md:flex-row flex-col items-center'
-    >
+    <main name='home'className='first_color  h-screen flex justify-center items-center bg-gray-200'>
      
-       <div className='shadow-md shadow-violet-400 flex-1 bg-gradient-to-tr from-violet-900 rounded-2xl pl-4 w-[90%] md:ml-40 '>
-        <div className='text-center md:text-left'>
-          <h1 className=' md:text-5xl text-2 md:leading-normal leading-10 text-white'>
-            <span className=' text-teal-400 md:text-5xl'>
-              <span className=' '>Hi There👋, It is me </span>
-              <br />
-            </span>
-            <span>Muhammadqodir</span>
-          </h1>
-          <h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-white'>
-            Your
-            <span className='text-yellow-500'> Front End Web Developer</span>
-          </h4>
-
-          <p className='text-white py-4 max-w-[700px]'>
-            I'm a programmer who likes creating visually appealing and
-            user-friendly websites.
-          </p>
+         <div className='absolute md:mt-[100px] md:ml-[500px]'>
+            <img className='my_image h-[500px]  w-[400px] object-cover rounded-tl-2xl rounded-br-2xl' src={me4} alt="Professional-looking image" />
         </div>
-        <div>
-          <button
-          
-            className='hover:scale-110 duration-500 shadow-md shadow-teal-300  rounded-md  text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-amber-500  hover:border-amber-500'
-          >
-            <Link
-              onClick={hClick}
-              to='about'
-              smooth={true}
-              duration={400}
-            >
-              
-              About Me
-            </Link>
 
-            <div className='group-hover:rotate-90 duration-300'>
-            <Link
-              onClick={hClick}
-              to='about'
-              smooth={true}
-              duration={400}>
-              <HiArrowNarrowRight className='ml-3' />
-             </Link>
-            </div>
-          </button>
-        </div>
-      </div>
-  
    
-      
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className='hover:scale-110 duration-500 py-10 rounded-full flex-1 flex items-center justify-center  h-full'
-      >
-       <motion.img
-      whileHover={{ rotate: -180 }}
-      className='shadow-md shadow-[#bfe676] justify-center text-white border-2 hover:bg-pink-600 hov rounded-full md:w-7/12 h-full object-cover w-[70%] '
-     src={me4}
-     alt='Profile'/>
-      </motion.div>
 
-
-    </div>
+    </main>
   );
 };
 

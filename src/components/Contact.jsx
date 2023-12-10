@@ -3,10 +3,9 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
 
-
 import Swal from 'sweetalert2';
 
- const Contact = () => {
+  const Contact = () => {
   const form = useRef();
 
   const handleClick = () => {
@@ -27,10 +26,7 @@ import Swal from 'sweetalert2';
    const { from_name, from_email, message } = formData;
 
       const handleChange = (e) => {
-        setFormData({
-          ...formData,
-          [e.target.name]: e.target.value
-        });
+        setFormData({ ...formData, [e.target.name]: e.target.value});
       };
  
       const sendEmail = (e) => {
@@ -51,9 +47,9 @@ import Swal from 'sweetalert2';
       };
 
   return (
-    <div name='contact' className='main w-full min-h-full h-screen  flex justify-center items-center p-4 bg-[#0a192f] '>
+    <div name='contact' className='first_color main w-full min-h-full h-screen  flex justify-center items-center p-4  '>
    
-     <form className='flex flex-col md:w-[600px]  w-full' ref={form} onSubmit={sendEmail}>
+     <form className='flex flex-col md:w-[600px] w-full' ref={form} onSubmit={sendEmail}>
   
        <div>
             <p className='ml-[80px] md:ml-[200px] text-4xl font-bold inline border-b-4 border-orange-500 text-white'>
@@ -75,14 +71,9 @@ import Swal from 'sweetalert2';
           
         
 
-            <motion.div     
-                initial={{opacity: 0, scale: 0, x: -500 }}
-                whileHover={{rotate: 360}}
-                whileInView = {{opacity: 1, scale: 1, x: 0}}
-                animate={{ x: 0 }}
-                transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}>
-                <input  onClick={handleClick}  className=' hover:scale-110 duration-500 bg-slate-400 w-[25%] shadow-md shadow-[#69a5ee] justify-center text-black border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md' type="submit" value="Send" />
-            </motion.div>
+            <div>
+                <input  onClick={handleClick}  className=' md:hover:scale-110 duration-500 bg-slate-400 w-[25%] shadow-md shadow-[#69a5ee] justify-center text-black border-2 md:hover:bg-pink-600 md:hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md' type="submit" value="Send" />
+            </div>
            
           
         </form>
