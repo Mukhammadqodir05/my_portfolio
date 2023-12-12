@@ -8,31 +8,21 @@ import Footer from  './components/Footer'
 import StarsCanvas from "./components/Stars";
 
 
+
 function App() {
   return (
     <div name='home' className="home overflow-x-hidden "> 
-        <Nav_bar/>
-        <div className="relative z-0">
+         <Nav_bar/>
          <Home/>
-         <StarsCanvas />
-        </div>
-        <div className="relative z-0">
         <About/>
-        <StarsCanvas />
-        </div>
         <div className="relative z-0">
         <Skills/>
         <StarsCanvas />
         </div>
-        <div className="relative z-0">
         <Projects/>
-        <StarsCanvas />
-        </div>
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer/>
+        <Contact />
+        <Footer/> 
+        
   </div>  
   )
 };

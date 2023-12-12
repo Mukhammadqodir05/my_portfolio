@@ -1,78 +1,61 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { NavLink,Link } from "react-router-dom";
+import gsap from "gsap";
 
-import  space  from '/src/assets/space.jpg';
+function LogoAnimation(props) {
+  const [inputValue, setInputValue] = useState('');
 
-const Intro = () => {
-         const [message, setMessage] = useState('');
-         const [name, setName] = useState('');
-         const [option, setOption] = useState('');
-         const [options, setOptions] = useState('');
-         const [email, setEmail] = useState('');
-       
-         useEffect(() => {
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
-           typeWriter("Hi there 👋", setMessage),
-          
-           setTimeout(() => { typeWriter("I'm Muhammad ", setName); }, 700),
-           
-           setTimeout(() => { typeWriter("Pick one of the following options 👇", setOption) }, 1500)
-           
-           setTimeout(() => {typeWriter(" Go To Home", setOptions)}, 3300 )
-          
-           setTimeout(() => {typeWriter(" Email Me ✉️", setEmail)},  4000 )
-         }, []);
-       
+  // const handleButtonClick = () => {
+  //   props.onPageSwitch('App');
+  // };
 
-         const typeWriter = (text, setText) => {
-               let i = 0;
-               const speed = 40;
-               const type = () => {
-                  if (i < text.length){
-                           setText(`<span style="background-color: hsla(290, 36%, 34%, 0.8)   ;
-                                    border-radius: 50px;
-                                    padding: 17px;
-                                     "> 
-                                    ${text.substring(0, i+1)} </span>`);
-                      i++;
-                      setTimeout(type, speed);
-                  };
-              
-               };
-            type();   
-         }
-       
+  const isButtonDisabled = inputValue !== 'hello' && inputValue !== 'Hello';
 
-    return (
-         <div className=' w-full h-screen absolute'>
-           
-         <div className='absolute w-full h-[100%]'>
-          <img className='w-full h-[100%]' src={space} />
-         </div>
 
-         <div className='ml-[25px] text-white md:mt-[70px] md:ml-[70px] mt-12 text-xl md:text-5xl '> 
-              <h1 className='absolute' dangerouslySetInnerHTML={{ __html: message }}></h1>
-         </div>
+  useEffect(() => {
+    gsap.fromTo(
+      ".loading-page",
+      { opacity: 1 },
+      { opacity: 0, display: "none", duration: 1.5, delay: 3.5 }
+    );
+    gsap.fromTo(
+      ".logo-name",
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 2, delay: 1.5 }
+    );
+  }, []);
+
+  return (
+    <main className="flex  flex-col justify-center items-center text-center h-screen w-full overflow-hidden">
+      <div className="container_color flex flex-col space-y-7 h-screen w-full justify-center items-center">
+          <h1 className="text-2xl">𝚂𝚊𝚢 𝚑𝚎𝚕𝚕𝚘!</h1>
+          <input className="border-b bg-transparent outline-none pl-1"
+              placeholder="please type hello!" value={inputValue}
+              required
+              onChange={handleInputChange}/>
+          <button className="button p-2 w-20 rounded-md hover:scale-90 duration-300"
+               disabled={isButtonDisabled}>
+              <NavLink to="/home">Home</NavLink> 
+         </button>
+     </div>
+
+      <div className="loading-page">
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z"/>
+          </svg>
+
+          <div class="name-container ">
+             <div class="logo-name text-xl ">&lt;𝐌&gt;𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓&lt;/ 𝐌&gt;</div>
+          </div>
          
-         <div className='ml-[25px] text-white text-xl md:text-5xl mt-[-10px] md:ml-[70px] md:mt-[120px] '>
-              <h2 className='absolute mt-[100px]' dangerouslySetInnerHTML={{ __html: name }}></h2>
-         </div>
-         
-         <div className='absolute ml-[25px] mt-[190px] text-white text-xl md:text-5xl md:mt-[250px] md:ml-[70px]'>
-              <h3 dangerouslySetInnerHTML={{ __html: option }}></h3>
-         </div>
-       
-            <div className=' absolute text-white md:text-2xl md:ml-[150px] ml-[50px] mt-[300px] md:mt-[400px]  hover:scale-110 duration-500 shadow-slate-600'>
-              <Link to='/home' className=' hover:shadow-md shadow-slate-600' > 
-                  <span   dangerouslySetInnerHTML={{__html: options}}></span> 
-               </Link> 
-            </div>
+      </div>
 
-             <div className='absolute text-white mt-[300px] md:mt-[400px] ml-[200px] md:text-2xl md:ml-[350px] hover:scale-110 duration-500'>
-                 <a href='mailto:muhammadqodirummatov571@gmail.com'>
-                     <span className='' dangerouslySetInnerHTML={{__html: email}}></span>
-                  </a>
-             </div>
-    </div>
-  )};
-export default Intro;
+    </main>
+  );
+}
+
+export default LogoAnimation;
