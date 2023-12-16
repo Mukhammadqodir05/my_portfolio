@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { NavLink,Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 
-function LogoAnimation(props) {
-  const [inputValue, setInputValue] = useState('');
-
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  // const handleButtonClick = () => {
-  //   props.onPageSwitch('App');
-  // };
-
-  const isButtonDisabled = inputValue !== 'hello' && inputValue !== 'Hello';
-
-
+function LogoAnimation() {
+  
   useEffect(() => {
     gsap.fromTo(
       ".loading-page",
@@ -33,14 +21,13 @@ function LogoAnimation(props) {
     <main className="flex  flex-col justify-center items-center text-center h-screen w-full overflow-hidden">
       <div className="container_color flex flex-col space-y-7 h-screen w-full justify-center items-center">
           <h1 className="text-2xl">𝚂𝚊𝚢 𝚑𝚎𝚕𝚕𝚘!</h1>
-          <input className="border-b bg-transparent outline-none pl-1"
-              placeholder="please type hello!" value={inputValue}
-              required
-              onChange={handleInputChange}/>
-          <button className="button p-2 w-20 rounded-md hover:scale-90 duration-300"
-               disabled={isButtonDisabled}>
-              <NavLink to="/home">Home</NavLink> 
-         </button>
+          <input className="border-b bg-transparent outline-none pl-10 pb-1"
+              placeholder=" typing is optional!"/>
+          <NavLink to="/home">
+               <button className="button p-3 w-[100px] rounded-md hover:scale-90 duration-300">
+                click me
+              </button>
+         </NavLink> 
      </div>
 
       <div className="loading-page">
@@ -49,11 +36,9 @@ function LogoAnimation(props) {
           </svg>
 
           <div class="name-container ">
-             <div class="logo-name text-xl ">&lt;𝐌&gt;𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓&lt;/ 𝐌&gt;</div>
+             <div class="logo-name mt-8 uppercase font-bold text-white text-xl">&lt;𝐌&gt;𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓&lt;/ 𝐌&gt;</div>
           </div>
-         
-      </div>
-
+        </div>
     </main>
   );
 }

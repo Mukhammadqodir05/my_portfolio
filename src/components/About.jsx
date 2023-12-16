@@ -1,39 +1,44 @@
 import React from 'react';
-import me3 from '/src/assets/me3.jpg'
+import myImage from '/src/assets/myImage.jpg'
+import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 
-const About = () => {
+const About = () => { 
 
   return (
-    <div
-      name='about'
-      className="main second_color w-full mx-auto h-screen flex py-10 md:flex-row flex-col items-center  ">
-      
-    <div className=" flex-1 flex  justify-center  h-full">
-        <div className=' h-full sm:w-10/12  md:w-80 w-11/12 max-w-sm'>
-          <img className=" image py-10 w-[90%] image md:w-96 ml-6 " src={me3} />
-        </div>
-      </div>
-      
-    
-      <div
-       className='flex-1 md:mt-[-100px] md:h-[450px]'>
-   
-        <div className='py-10 text-center'>
-          <h1 className='md:mt-[-20px] leading-10 md:text-5xl text-3xl  text-white font-bold'>
-          <a className=" md:ml-[-300px] text-4xl inline border-b-4 border-orange-500 font-semibold">
-          About <span className="text-cyan-600">Me</span>
-        </a>
-          </h1>
-        </div>
-    
+    <main name='about' className="second_color flex h-screen w-full justify-center items-center md:pt-20 ">
+     
+      <div className='flex md:px-5 md:gap-20 lg:space-x-[10px] lg:px-4 space-y-10 flex-col items-center text-center justify-center md:grid md:grid-cols-2 px-5 '>
+         <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[560px] border rounded-md p-4'>
+          <img className="md:max-w-[350px] max-h-[350px] p-6 rounded-tl-[8%] rounded-br-[8%] mt-[-18px]" src={myImage}/>
+           <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
+                <h1 className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</h1>
 
-        <div className='md:ml-[40px] text-justify md:text-base leading-7 mx-auto w-[300px] md:w-full md:px-0  grid sm:grid-cols-2 gap-5 '>
-          <p className='text-slate-100'>
-          Hi there, my name is Muhammadqodir. I'm a skilled software developer with a passion for creating innovative solutions that make a positive impact on people's lives. With learning all the software skills I have as a self-taught, I have developed a deep understanding of what it takes to deliver high - quality software that meets the unique needs of each project. Whether you're an individual or a large corporation, I am committed to providing you with the best possible service and support. From initial consultation to final delivery I will work closely with you to ensure that your software meets your exact specifications and exceeds your expectations. So why wait? Contact me today to discuss your software needs and discover how I can help you achieve your goals 🤝
-          </p>
+              <div className="flex justify-center mt-10 space-x-9 text-5xl">
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                    <FaFacebook />
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                    <FaTwitter />
+                  </a>
+                  <a href="https://www.youtube.com/@MasterProgrammingLanguages
+                    " target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                    <FaYoutube />
+                  </a>
+                  <a href="https://www.linkedin.com/in/muhammadqodir-developer/" 
+                    target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                    <FaLinkedin />
+                  </a>
+              </div>
+                 <button className='h1 mt-[25px] py-3 rounded-xl '>Contact me</button>
+           </div>
         </div>
+          
+            <div className='flex flex-col border-cyan-500 p-4'>
+                <h1 className=' md:mt-[-300px]'>About Me</h1>
+          </div>
+          
       </div>
-    </div>
+    </main>
   );
 };
 

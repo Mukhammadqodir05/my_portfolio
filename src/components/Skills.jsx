@@ -9,7 +9,7 @@ import tailwind from '/src/assets/tailwind.png'
 
 const Skills = () => {
     return (
-       <div name='skills' className='main w-full h-screen text-gray-300 '>
+       <div name='skills' className='main w-full md:h-screen h-full text-gray-300 '>
            <div className="gap-12 py-20 max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         
              <div>

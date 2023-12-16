@@ -18,26 +18,61 @@ body {
   background: rgb(0, 0, 0);
 }
 
+.my_image{
+  background:#271247
+}
 
+.h1{
+  background-image: linear-gradient(to right top, #cd6bd1, #cf70d5, #d175da, #d47ade, #d67fe2, #d082e7, #c986ec, #c289f0, #ae8bf5, #978ef8, #7e90fb, #5f92fb);
+}
 .CV{
   background-image: linear-gradient(to right top, #b46bd1, #a05fc4, #8d53b7, #7947ab, #663c9e, #633ba1, #603ba4, #5c3aa7, #6943bb, #774cd0, #8556e5, #945ffb);
 }
   
+.contact_detail{
+  background-image:linear-gradient(to right bottom,#0d1623, #0e1e38, #16244d, #262961, #573eab);
+}
+
   @media (min-width: 768px) {
     .footer-container {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
+   
   }  
+  
+  @media (min-width: 450px) {
+    .img{
+        max-width: 95%;
+    }
+    
+  }
 
+  @media (min-width: 300px) {
+    .hi{
+      font-size: 55px;
+      line-height: 1;   
+    }
+    .span{
+      font-size: 30px;
+      line-height: 1;   
+    }
+  }
+
+  @media (min-width: 550px) {
+    .img{
+        max-width: 75%;
+    }
+  }
+ 
 
 .first_color{
-  background-image: linear-gradient(to right top, #0d1623, #0e1e38, #16244d, #262961, #3d2c73);
+  background-image: linear-gradient(to right top, #1a1130, #1b1132, #1c1034, #1d1035, #1e0f37, #1e0f37, #1e0f37, #1e0f37, #1c0f35, #1b0f34, #190f32, #180f30);
 }
 
 .second_color{
-  background-image:linear-gradient(to right bottom,#0d1623, #0e1e38, #16244d, #262961, #3d2c73);
+  background-image: linear-gradient(to right bottom, #1a1130, #1b1132, #1c1034, #1d1035, #1e0f37, #1e0f37, #1e0f37, #1e0f37, #1c0f35, #1b0f34, #190f32, #180f30);
 }
 
 .container_color{
@@ -63,6 +98,9 @@ body {
   justify-content: center;
 }
 
+.color{
+  color: #ee3de5;
+}
 #svg {
   height: 250px;
   width: 250px;
@@ -73,6 +111,17 @@ body {
   animation: draw 8s ease;
 }
 
+#nav_svg {
+  height: 40px;
+  width: 40px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 90px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+
 @keyframes draw {
   0% {
     stroke-dashoffset: 4500;
@@ -81,16 +130,6 @@ body {
     stroke-dashoffset: 0;
   }
 }
-
-.logo-name {
-  color: #fff;
-  margin-top: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bolder;
-} 
-
-
 
 
 

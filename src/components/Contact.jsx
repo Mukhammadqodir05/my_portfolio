@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
-
-
+import {FaPhone} from 'react-icons/fa'
+import {FaPerson} from 'react-icons/fa6'
+import {HiOutlineMail} from'react-icons/hi'
 import Swal from 'sweetalert2';
 
   const Contact = () => {
@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
   const handleClick = () => {
     Swal.fire(
       'Great job!',
-      'Your message will reach the destination if you inputed it!',
+      'Your message will reach the destination!',
       'success'
     )
   }
@@ -47,36 +47,41 @@ import Swal from 'sweetalert2';
       };
 
   return (
-    <div name='contact' className='first_color main w-full min-h-full h-screen  flex justify-center items-center p-4  '>
+    <div name='contact' className='first_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-4'>
    
-     <form className='flex flex-col md:w-[600px] w-full' ref={form} onSubmit={sendEmail}>
-  
-       <div>
-            <p className='ml-[80px] md:ml-[200px] text-4xl font-bold inline border-b-4 border-orange-500 text-white'>
-              Contact Me
-            </p>
-            <p className='ml-[50px] md:ml-[160px] text-white py-4'>
-              //Fill out the form below to get in touch
-            </p>
-          </div>
+    
+        <p className='text-4xl font-bold inline border-b-4  border-b-violet-600 text-white'>
+            Get in touch
+        </p>
 
-            <label  className='text-white'>Name</label>
-            <input className='rounded-sm border border-cyan-600 bg-[#ccd6f6] p-2 w-[100%]' required onChange={handleChange} placeholder='Enter your name here' type="text"  name="from_name" value={from_name} />
-      
-            <label className='text-white'>Email</label>
-            <input className='rounded-sm border-cyan-600 border bg-[#ccd6f6] p-2 w-[100%]' required onChange={handleChange} placeholder='Enter your email address' type="email" name="from_email" value={from_email} />
+       <div className='border space-y-5  border-gray-500 rounded-md flex flex-shrink-0 flex-col justify-center md:max-w-[600px] md:w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>
+       <div className='flex flex-col'>
+          <h1 className='font-bold ml-2'>My Email Address:</h1>
+           <span className='text-sm ml-4  break-words'>mummah571@gmail.com</span>
+           <span className='text-sm ml-4  break-words'>mummatov73@gmail.com</span>
          
-            <label className='text-white'>Message</label>
-            <textarea className='border-cyan-600 border rounded-sm bg-[#ccd6f6]  h-[120px]' required onChange={handleChange} placeholder='Type your message here ...' name="message" value={message} />
-          
-        
+        </div>
+    
 
-            <div>
-                <input  onClick={handleClick}  className=' md:hover:scale-110 duration-500 bg-slate-400 w-[25%] shadow-md shadow-[#69a5ee] justify-center text-black border-2 md:hover:bg-pink-600 md:hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md' type="submit" value="Send" />
+       <form className='flex flex-col max-w-[500px] space-y-6 w-full p-2' ref={form} onSubmit={sendEmail}>
+            <div className='flex justify-center space-y-1 space-x-[-20px]'>
+                <FaPerson className=" text-2xl text-white" />
+                <input className='outline-none border-b bg-transparent border-cyan-600 pl-6 w-[100%]' required onChange={handleChange} placeholder='Your name' type="text"  name="from_name" value={from_name} />
             </div>
-           
-          
+
+            <div className='flex justify-center space-y-[-2px] space-x-[-20px]'>
+                <HiOutlineMail  className='text-xl text-white '/>
+                <input className='outline-none border-b bg-transparent border-cyan-600 pl-7 w-[100%]' required onChange={handleChange} placeholder='Your email' type="email" name="from_email" value={from_email} />
+            </div>
+               <textarea className='outline-none rounded-md border-cyan-600 border h-[150px] bg-transparent p-2' required onChange={handleChange} placeholder='Type your message here ...' name="message" value={message} />
+            <div className='flex overflow-hidden justify-center'>
+                <button onClick={handleClick} className='flex flex-shrink-0 justify-center outline-none border border-t-gray-100 shadow-2xl shadow-black hover:scale-110 duration-300 border-cyan-600 w-[100px] max-w-[100px] py-3 my-2 rounded-md' type="submit" value="Send">
+                  Submit
+                </button>
+         </div>
         </form>
+      </div>
+
     </div>
   );
 };
