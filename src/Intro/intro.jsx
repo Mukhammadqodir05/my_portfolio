@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 
-function LogoAnimation() {
+function LogoAnimation(props) {
   
   useEffect(() => {
     gsap.fromTo(
@@ -23,11 +22,12 @@ function LogoAnimation() {
           <h1 className="text-2xl">𝚂𝚊𝚢 𝚑𝚎𝚕𝚕𝚘!</h1>
           <input className="border-b bg-transparent outline-none pl-10 pb-1"
               placeholder=" typing is optional!"/>
-          <NavLink to="/home">
-               <button className="button p-3 w-[100px] rounded-md hover:scale-90 duration-300">
+          
+               <button className="button p-3 w-[100px] rounded-md hover:scale-90 duration-300" 
+                    onClick={() => props.onSwitch('App')}>
                 click me
               </button>
-         </NavLink> 
+        
      </div>
 
       <div className="loading-page">
