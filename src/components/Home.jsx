@@ -4,15 +4,16 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
   
-
   return (
-    <main className='first_color flex justify-center items-center h-screen w-full pt-24 lg:pt-10 p-3'>
-      <div className='flex md:px-2 lg:px-4 space-y-10 flex-col items-center text-center justify-center lg:grid lg:grid-cols-2 px-5 w-full'>
-        
+    <main
+      
+      className='first_color flex justify-center items-center h-screen w-full pt-24 lg:pt-10 p-3'>
+      
+      <div className='flex md:px-2 lg:px-4 space-y-10 flex-col items-center text-center justify-center lg:grid lg:grid-cols-2 w-full'>   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='hi flex font-bold md:text-7xl lg:text-7xl text-[#fff] md:pl-[90px]'>𝑯𝒊 𝒕𝒉𝒆𝒓𝒆👋🏻</h1>
+            <h1 className='hi flex font-extrabold md:text-7xl lg:text-7xl text-[#fff] md:pl-[90px]'>𝑯𝒊 𝒕𝒉𝒆𝒓𝒆👋🏻</h1>
            <div className='flex flex-col mt-2 '>
-              <span className='span text-2xl md:text-3xl text-start '>𝑰'𝒎 𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</span>
+              <span className='span text-2xl md:text-3xl text-start font-extrabold '>𝑰'𝒎 𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</span>
               <span className='span text-xl md:text-2xl text-start font-bold text-violet-500'>𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</span>
            </div>
 

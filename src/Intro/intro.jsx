@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 function LogoAnimation(props) {
   
@@ -22,11 +23,12 @@ function LogoAnimation(props) {
           <h1 className="text-2xl">𝚂𝚊𝚢 𝚑𝚎𝚕𝚕𝚘!</h1>
           <input className="border-b bg-transparent outline-none pl-10 pb-1"
               placeholder=" typing is optional!"/>
-          
-               <button className="button p-3 w-[100px] rounded-md hover:scale-90 duration-300" 
-                    onClick={() => props.onSwitch('App')}>
-                click me
-              </button>
+               
+               <Link to='/main'>
+                    <button className="button p-3 w-[100px] rounded-md hover:scale-90 duration-300">
+                      click me
+                    </button>
+               </Link>
         
      </div>
 

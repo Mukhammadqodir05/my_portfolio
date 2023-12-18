@@ -47,11 +47,11 @@ import Swal from 'sweetalert2';
       };
 
   return (
-    <div name='contact' className='first_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-4'>
+    <div name='contact' className='first_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-3'>
    
     
-        <p className='text-4xl font-bold inline border-b-4  border-b-violet-600 text-white'>
-            Get in touch
+        <p className='text-4xl font-bold inline border-b-4 border-b-violet-600 text-white'>
+             𝑮𝒆𝒕 𝒊𝒏 𝒕𝒐𝒖𝒄𝒉
         </p>
 
        <div className='border space-y-5  border-gray-500 rounded-md flex flex-shrink-0 flex-col justify-center md:max-w-[600px] md:w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>

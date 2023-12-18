@@ -1,21 +1,20 @@
 import React from 'react';
 import myImage from '/src/assets/myImage.jpg'
-import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
+import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 
 const About = () => { 
 
   return (
-    <main name='about' className="second_color flex h-screen w-full justify-center items-center md:pt-20 ">
-     
-      <div className='flex md:px-5 md:gap-20 lg:space-x-[10px] lg:px-4 space-y-10 flex-col items-center text-center justify-center md:grid md:grid-cols-2 px-5 '>
-         <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[560px] border rounded-md p-4'>
-          <img className="md:max-w-[350px] max-h-[350px] p-6 rounded-tl-[8%] rounded-br-[8%] mt-[-18px]" src={myImage}/>
+    <main name='about' className="second_color h-full md:h-[900px] md:pb-20 md:pt-[200px] pb-10 lg:h-screen flex w-full justify-center items-center p-3 lg:pt-40 pt-28 ">   
+      <div className='lg:max-w-[1100px] w-full flex md:px-5 md:gap-10 lg:space-x-[-30px] lg:px-4 space-y-10 flex-col items-center text-center justify-center md:grid md:grid-cols-2  '>
+         <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[600px] border rounded-md p-4'>
+          <img className="md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage}/>
            <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
                 <h1 className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</h1>
 
-              <div className="flex justify-center mt-10 space-x-9 text-5xl">
-                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
-                    <FaFacebook />
+              <div className="flex text-4xl justify-center mt-16 space-x-7 lg:space-x-9 md:text-5xl">
+                  <a href="https://github.com/Muhammadqodir001" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                    <FaGithub />
                   </a>
                   <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
                     <FaTwitter />
@@ -29,14 +28,38 @@ const About = () => {
                     <FaLinkedin />
                   </a>
               </div>
-                 <button className='h1 mt-[25px] py-3 rounded-xl '>Contact me</button>
+                 <button className='h1 mt-[35px] md:mt-[50px] lg:mt-[35px] py-3 rounded-xl '>Contact me</button>
            </div>
         </div>
           
-            <div className='flex flex-col border-cyan-500 p-4'>
-                <h1 className=' md:mt-[-300px]'>About Me</h1>
+            <div className='lg:max-w-[450px] max-w-[400px] text-left space-y-3 items-center flex flex-col border-cyan-500 '>
+                <h1 className='inline border-b-4 border-b-violet-600 md:mt-[-50px] font-extrabold text-center text-2xl'>☪️ 𝑺𝒆𝒍𝒇-𝑺𝒖𝒎𝒎𝒂𝒓𝒚 ☪️</h1>
+                <span className='font-bold'>𝐇𝐞𝐥𝐥𝐨! 𝐈'𝐦 𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝𝐪𝐨𝐝𝐢𝐫, 𝐚 𝐩𝐚𝐬𝐬𝐢𝐨𝐧𝐚𝐭𝐞 𝐟𝐫𝐨𝐧𝐭-𝐞𝐧𝐝 𝐰𝐞𝐛 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫.</span>
+                 
+               <span>My journey into the world of web development began in 2023 
+                     as an independent developer with no prior knowledge of 
+                     programming. I initially enrolled in a bootcamp, but soon 
+                     realized that the slow pace of learning was not for me. 
+                     Instead, I decided to take the self-learning route, which 
+                     has allowed me to constantly adapt and learn new technologies day-to-day
+                     as they emerge.
+               </span>
+               <span>As an enthusiastic web developer, my ultimate goal is to create 
+                     stunning user experiences that are both visually captivating and 
+                     highly functional across all devices. With a strong focus on design 
+                     and a commitment to excellence, I am dedicated to delivering the best
+                     possible results for every project.
+               </span>
+               <span>My passion for innovation and 
+                     creativity drives me to constantly explore new technologies and stay 
+                     at the forefront of web development trends. By leveraging my skills 
+                     and expertise, I strive to create intuitive and seamless user 
+                     experiences that leave a lasting impression on every visitor. 
+                     Whether it's designing a website or developing a complex web 
+                     application, I am committed to delivering exceptional results that 
+                     exceed expectations.
+               </span>
           </div>
-          
       </div>
     </main>
   );

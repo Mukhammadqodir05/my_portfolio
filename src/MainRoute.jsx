@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import App from './App.jsx'
 import LogoAnimation from './Intro/intro.jsx'
 
-
 const MainRoute = () => {
   const[activePage, setactivePage] = useState('LogoAnimation')
 
@@ -13,7 +12,6 @@ const MainRoute = () => {
   return (
     <div>
        {activePage === 'LogoAnimation'? < LogoAnimation onSwitch={change_page}/> : <App />}
-       
     </div>
   )
 }
