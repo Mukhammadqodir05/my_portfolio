@@ -27,7 +27,7 @@ const Home = () => {
           </ul>
        </Fade>
       <JackInTheBox duration={1200}>
-         <div className='flex md:cursor-pointer justify-center'>
+         <div className='flex justify-center'>
               <img className='img rounded-md border-gray-300 lg:max-w-[510px] md:max-w-[500px]' src={Snap} alt="" />
           </div>
         </JackInTheBox>
