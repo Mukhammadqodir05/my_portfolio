@@ -45,8 +45,6 @@ body {
     top: 15%;
   }
 
-
-
   @media (min-width: 300px) {
     .hi{
       font-size: 55px;
@@ -64,7 +62,6 @@ body {
     }
   }
  
-
 .first_color{
   background-image: linear-gradient(to right top, #1a1130, #1b1132, #1c1034, #1d1035, #1e0f37, #1e0f37, #1e0f37, #1e0f37, #1c0f35, #1b0f34, #190f32, #180f30);
 }
@@ -99,15 +96,13 @@ body {
   justify-content: center;
 }
 
-.color{
-  color: #ee3de5;
-}
+
 #svg {
   height: 250px;
   width: 250px;
   stroke: white;
   fill-opacity: 0;
-  stroke-width: 90px;
+  stroke-width: 140px;
   stroke-dasharray: 4500;
   animation: draw 8s ease;
 }
@@ -117,11 +112,10 @@ body {
   width: 40px;
   stroke: white;
   fill-opacity: 0;
-  stroke-width: 90px;
+  stroke-width: 140px;
   stroke-dasharray: 4500;
   animation: draw 8s ease;
 }
-
 
 @keyframes draw {
   0% {
