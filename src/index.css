@@ -104,7 +104,15 @@ body {
   stroke-dasharray: 4500;
   animation: draw 8s ease;
 }
-
+.favicon {
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 140px;
+  stroke-dasharray: 4500;
+}
 #nav_svg {
   height: 40px;
   width: 40px;
