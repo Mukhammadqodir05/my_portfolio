@@ -4,9 +4,7 @@ import {Link} from 'react-scroll'
 import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from 'react-awesome-reveal';
-import { Flip } from 'react-awesome-reveal';
-import { Reveal } from 'react-awesome-reveal';
-import { JackInTheBox } from 'react-awesome-reveal';
+
 
 const About = () => { 
 

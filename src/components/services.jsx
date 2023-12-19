@@ -1,10 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Fade } from "react-awesome-reveal";
+
 import webdev from '/src/assets/webdev.jpg'
 import webDesign from '/src/assets/webDesign.jpg'
 import mobile from '/src/assets/mobile.png'
 import freelance from '/src/assets/freelance.jpg'
-
 
 import 'swiper/css';
 import 'swiper/css/effect-cube';
@@ -15,14 +16,15 @@ const Services = () => {
 
   return (
     <main name='services' className='flex flex-col overflow-hidden  items-center justify-center w-full h-screen space-y-[-50px] pb-14 pt-10 first_color p-3'>
-      
-      <div className='flex flex-col space-y-1'>
-          <h1 className='text-4xl absloute font-bold inline border-b-4 border-b-violet-600 text-white'>
-                𝑴𝒚 𝑺𝒆𝒓𝒗𝒊𝒄𝒆𝒔
-          </h1>
-          <p>// 𝐈 𝐜𝐚𝐧 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞𝐬𝐞 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬</p>
-      </div>
-
+       <Fade duration={2000}>
+       
+        <div className='flex flex-col space-y-1'>
+            <h1 className='text-4xl absloute font-bold inline border-b-4 border-b-violet-600 text-white'>
+                  𝑴𝒚 𝑺𝒆𝒓𝒗𝒊𝒄𝒆𝒔
+            </h1>
+            <p>// 𝐈 𝐜𝐚𝐧 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞𝐬𝐞 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬</p>
+        </div>
+  
       <Swiper
         effect={'cube'}
         grabCursor={true}
@@ -43,7 +45,8 @@ const Services = () => {
         modules={[EffectCube, Pagination, Autoplay]}
         className="mySwiper">
 
-      <div className='flex  pt-40 w-full flex-col lg:grid lg:grid-cols-4 lg:space-x-10 lg:w-full space-y-7 md:space-y-0 p-40 '>
+   
+       <div className='flex  pt-40 w-full flex-col lg:grid lg:grid-cols-4 lg:space-x-10 lg:w-full space-y-7 md:space-y-0 p-40 '>
          
           <SwiperSlide>
             <div className='flex border-cyan-500 flex-col items-center space-y-5 h-[420px] w-full border p-8 rounded-md max-w-[400px]'>
@@ -100,9 +103,9 @@ const Services = () => {
                </div>
            </div>
           </SwiperSlide>
-
-         </div>
+            </div>
       </Swiper>
+       </Fade>                                                 
     </main>
   )
 }
