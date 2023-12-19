@@ -19,7 +19,7 @@ const About = () => {
           </Bounce>
 
             <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
-               <Fade cascade  duration={80} className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 
+               <Fade cascade  duration={70} className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 
             
               <div className="flex text-4xl justify-center mt-16 space-x-7 lg:space-x-9 md:text-5xl">
                   <a href="https://github.com/Muhammadqodir001" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">

@@ -17,14 +17,10 @@ const Services = () => {
   return (
     <main name='services' className='flex flex-col overflow-hidden  items-center justify-center w-full h-screen space-y-[-40px] pb-14 pt-10 second_color p-3'>
        <Fade duration={2000}>
-       
-        <div className='flex flex-col space-y-1'>
-            <h1 className='text-4xl absloute font-bold inline border-b-4 border-b-violet-600 text-white'>
-                  𝑴𝒚 𝑺𝒆𝒓𝒗𝒊𝒄𝒆𝒔
-            </h1>
-            <p>// 𝐈 𝐜𝐚𝐧 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞𝐬𝐞 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬</p>
-        </div>
-  
+          <div className='flex flex-col space-y-1'>
+               <Fade cascade duration={70} className='text-4xl absloute font-bold inline border-b-4 border-b-violet-600 text-white'>𝑴𝒚 𝑺𝒆𝒓𝒗𝒊𝒄𝒆𝒔</Fade>
+               <p>// 𝐈 𝐜𝐚𝐧 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞𝐬𝐞 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬</p>
+          </div>
       <Swiper
         effect={'cube'}
         grabCursor={true}
