@@ -16,7 +16,6 @@ import Swal from 'sweetalert2';
     )
   }
 
-
   const [formData, setFormData] = useState({
         from_name: '',
         from_email: '',
@@ -54,7 +53,7 @@ import Swal from 'sweetalert2';
              𝑮𝒆𝒕 𝒊𝒏 𝒕𝒐𝒖𝒄𝒉
         </p>
 
-       <div className='border space-y-5  border-gray-500 rounded-md flex flex-shrink-0 flex-col justify-center md:max-w-[600px] md:w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>
+       <div className='border space-y-5  border-cyan-500 rounded-md flex flex-shrink-0 flex-col justify-center md:max-w-[600px] md:w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>
        <div className='flex flex-col'>
           <h1 className='font-bold ml-2'>My Email Address:</h1>
            <span className='text-sm ml-4  break-words'>mummah571@gmail.com</span>

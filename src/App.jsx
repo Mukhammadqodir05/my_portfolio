@@ -8,6 +8,7 @@ import Footer from  './components/Footer'
 import StarsCanvas from "./components/Stars";
 import Services from "./components/services";
 import { motion, useScroll } from "framer-motion"
+import { AiOutlineRocket } from "react-icons/ai";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -19,27 +20,27 @@ function App() {
       exit={{opacity:0}}
       transition={{duration: 3}}>
 
-      <motion.div className="fixed rounded-md mt-[70px] h-[5px] right-0 
-          left-0 origin-[0%] bg-[#a601ff]"
-          style={{ scaleX: scrollYProgress }}/>
+        <motion.div className="fixed rounded-md mt-[70px] h-[5px] right-0 
+            left-0 origin-[0%] bg-[#a601ff]"
+            style={{ scaleX: scrollYProgress }}/>
           
-      <Nav_bar/>
-      <Home/>
-      <About/>
-      <div className="relative z-0">
-        <Skills/>
-        <StarsCanvas />
-      </div>
-      <Services />
-      <Projects/>
-      <Contact />
-      <Footer/> 
-
-    </motion.main>  
+          <Nav_bar/>
+          <Home/>
+          <About/>
+          <div className="relative z-0">
+            <Skills/>
+            <StarsCanvas />
+          </div>
+           <Services />
+           <Projects/>
+           <Contact />
+           <Footer/> 
+    </motion.main>   
   )
 };
 
 export default App;
+
 
 
 

@@ -1,12 +1,15 @@
 import React from 'react';
 import myImage from '/src/assets/myImage.jpg'
+import {Link} from 'react-scroll'
 import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
+
 
 const About = () => { 
 
   return (
     <main name='about' className="second_color h-full md:h-[900px] md:pb-20 md:pt-[200px] pb-10 lg:h-screen flex w-full justify-center items-center p-3 lg:pt-40 pt-28 ">   
       <div className='lg:max-w-[1100px] w-full flex md:px-5 md:gap-10 lg:space-x-[-30px] lg:px-4 space-y-10 flex-col items-center text-center justify-center md:grid md:grid-cols-2  '>
+        
          <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[600px] border rounded-md p-4'>
           <img className="md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage}/>
            <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
@@ -28,7 +31,10 @@ const About = () => {
                     <FaLinkedin />
                   </a>
               </div>
-                 <button className='h1 mt-[35px] md:mt-[50px] lg:mt-[35px] py-3 rounded-xl '>Contact me</button>
+                 <Link className='mt-[35px] md:mt-[50px] lg:mt-[20px] py-3' to='contact' spy={true} smooth={true}  duration={400}>
+                     <button className='h1 rounded-xl py-3 px-10'>Contact me</button>
+                </Link>
+           
            </div>
         </div>
           

@@ -1,11 +1,18 @@
 import React from "react";
 import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
+import { Link } from "react-scroll";
+import {FcHome} from 'react-icons/fc'
 
 const Footer = () => {
   return (
-    <main
-      className="first_color flex flex-col md:flex-row justify-center items-center h-[180px] md:h-[100px] text-center overflow-hidden text-white">
-      <div className="footer-container w-full flex flex-col justify-center md:px-20 ">
+    <main className="first_color flex flex-col md:flex-row justify-center items-center h-[180px] md:h-[100px] text-center overflow-hidden text-white">
+        <div className="md:hidden text-5xl cursor-pointer">
+           <Link to='home' spy={true} smooth={true} duration={400} >
+               <FcHome />
+           </Link>
+        </div>
+
+      <div className="footer-container mb-5 md:mb-0 w-full flex flex-col justify-center md:px-5 ">
         <div className="text-lg">
          <h1 className="py-4">©️ 2023 Muhammadqodir. All rights reserved.</h1>
           </div>
@@ -26,6 +33,12 @@ const Footer = () => {
               </a>
           </div>
       </div>
+      <div className="hidden md:flex text-5xl cursor-pointer duration-300 hover:scale-110 p-5">
+           <Link to='home' spy={true} smooth={true} duration={400} >
+               <FcHome />
+           </Link>
+        </div>
+
     </main>
   );
 };

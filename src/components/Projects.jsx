@@ -13,7 +13,7 @@ const Projects = () => {
             <p className='py-6'> //𝐓𝐡𝐞𝐬𝐞 𝐚𝐫𝐞 𝐦𝐲 𝐫𝐞𝐜𝐞𝐧𝐭 𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬</p>
           </div>
         
-        <div className=" md:w-[500px]  justify-between md:h-[300px] flex-col h-[500px] grid md:grid-cols-2 gap-4">   
+        <div className=" md:w-[500px] md:space-x-20  justify-between md:h-[300px] flex-col h-[500px] grid md:grid-cols-2 gap-4">   
               
           <div
             style={{ backgroundImage: `url(${merc})` }}

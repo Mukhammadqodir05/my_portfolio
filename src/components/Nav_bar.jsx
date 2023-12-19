@@ -7,7 +7,6 @@ import { FiDownloadCloud } from "react-icons/fi";
 import gsap from "gsap";
 
 
-
 const Nav_bar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const[is_hoverOpen, setHoverOpen] = useState(false);
