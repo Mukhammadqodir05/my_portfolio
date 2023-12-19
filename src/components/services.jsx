@@ -15,7 +15,7 @@ import { EffectCube, Pagination, Autoplay } from 'swiper/modules';
 const Services = () => {
 
   return (
-    <main name='services' className='flex flex-col overflow-hidden  items-center justify-center w-full h-screen space-y-[-40px] pb-14 pt-10 first_color p-3'>
+    <main name='services' className='flex flex-col overflow-hidden  items-center justify-center w-full h-screen space-y-[-40px] pb-14 pt-10 second_color p-3'>
        <Fade duration={2000}>
        
         <div className='flex flex-col space-y-1'>

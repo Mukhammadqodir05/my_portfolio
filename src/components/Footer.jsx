@@ -3,7 +3,6 @@ import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 import { Link } from "react-scroll";
 import {FcHome} from 'react-icons/fc'
 import { Fade } from "react-awesome-reveal";
-import { Bounce } from 'react-awesome-reveal';
 import { JackInTheBox } from 'react-awesome-reveal';
 
 const Footer = () => {

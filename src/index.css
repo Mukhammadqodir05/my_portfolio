@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   color: #ffffff;
   background: rgb(0, 0, 0);
@@ -95,7 +94,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 #svg {
   height: 250px;
