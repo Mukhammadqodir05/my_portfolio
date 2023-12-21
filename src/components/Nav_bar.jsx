@@ -21,15 +21,15 @@ const Nav_bar = () => {
   }, []);
 
   return (
-    <main name='top' onMouseLeave={() => setHoverOpen(false)} className='navbar second_color md:px-10 lg:px-20 fixed text-white bg h-[70px] w-full z-10 flex justify-between items-center py-2'>
-        <NavLink className=" z-10 p-4 flex justify-between " to='/home'>
+    <main name='top' className='navbar second_color md:px-10 lg:px-20 fixed text-white bg h-[70px] w-full z-10 flex justify-between items-center py-2'>
+        <NavLink className=" z-10 p-4 flex justify-between" to='/home'>
             <div className='logo-namenav text-3xl pr-2'>&lt;/</div>  
             <svg  id="nav_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z"/>
             </svg>
             <div className='logo-namenav text-3xl '>&gt;</div> 
         </NavLink> 
-       <div className='hidden md:flex justify-center space-x-10 items-center'>
+       <div onMouseLeave={() => setHoverOpen(false)} className='hidden md:flex justify-center space-x-10 items-center'>
          <div onMouseEnter={() => setHoverOpen(true)}>
            <button className='relative' onClick={() => setIsOpen((isOpen) => !isOpen)}>
                     Portfolio
@@ -41,7 +41,7 @@ const Nav_bar = () => {
            </button>
            
         {is_hoverOpen &&   (
-            <ul  onMouseLeave={() => setHoverOpen(false)} className='shadow-2xl shadow-black absolute mt-3 text-black bg-white w-[250px] border-[2px] pb-1 pt-1 rounded-md md:right-[175px] lg:right-[215px]'>
+            <ul onMouseLeave={() => setHoverOpen(false)} className='dropdown_menu shadow-2xl shadow-black absolute mt-2 text-black bg-white w-[250px] border-[2px] pb-1 pt-1 rounded-md md:right-[175px] lg:right-[215px]'>
               <div className='absolute top-[-10px] left-[10%] border-l-[10px] border-r-[10px] border-b-[10px] border-b-white border-transparent'></div>
               
                <Link onClick={hClick} to='home' spy={true} smooth={true} duration={400} >
@@ -124,7 +124,7 @@ const Nav_bar = () => {
                     </button>
                     
                 {isOpen &&   (
-                    <ul className='shadow-2xl shadow-black absolute border-[2px] pb-1 mt-3 text-black bg-white w-[250px] rounded-md'>
+                    <ul className='dropdown_menu shadow-2xl shadow-black absolute border-[2px] pb-1 mt-3 text-black bg-white w-[250px] rounded-md'>
                          <div className='absolute top-[-10px] left-[10%] border-l-[10px] border-r-[10px] border-b-[10px] border-b-white border-transparent'></div>
                        
                         <Link  onClick={hClick} to='home' spy={true} smooth={true} duration={400} >

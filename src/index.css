@@ -132,6 +132,7 @@ body {
   }
 }
 
+/* ScrollBar */
 ::-webkit-scrollbar {
   width: 13px;
 }
@@ -154,3 +155,25 @@ body {
   border: 3px solid transparent;
   background-clip: content-box;
 }
+
+
+/* Dropdown menu */
+.dropdown_menu{
+    animation: rotateMenu 500ms ease-in-out forwards;
+    transform-origin: top center;
+}
+    
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
+
+
+
