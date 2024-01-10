@@ -6,50 +6,52 @@ import Swal from 'sweetalert2';
 import { Fade } from "react-awesome-reveal";
 
 
-  const Contact = () => {
-      const form = useRef();
+const Contact = () => {
+  const form = useRef();
 
-      const handleClick = () => {
-        Swal.fire(
-          'Great job!',
-          'Your message will reach the destination!',
-          'success'
-        )
-      }
+  const handleClick = () => {
+    Swal.fire(
+      'Great job!',
+      'Your message will reach the destination if you inputed it!',
+      'success'
+    )
+  }
 
-      const [formData, setFormData] = useState({
-            from_name: '',
-            from_email: '',
-            message: ''
-          });
+  const [formData, setFormData] = useState({
+        from_name: '',
+        from_email: '',
+        message: ''
+      });
 
-      const { from_name, from_email, message } = formData;
+   const { from_name, from_email, message } = formData;
 
       const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value});
+        setFormData({
+          ...formData,
+          [e.target.name]: e.target.value
+        });
       };
  
       const sendEmail = (e) => {
-          e.preventDefault();
+        e.preventDefault();
       
-          emailjs.sendForm('service_91rk5o9', 'template_bqck3jj', form.current, 'y39rgdxN9zq_rfi5a')
-              .then((result) => {
-                console.log(result.text);
-              }, (error) => {
-                console.log(error.text);
-              });
-        
-            setFormData({
-              from_name: '',
-              from_email: '',
-              message: ''
-            });
-     };
+        emailjs.sendForm('service_91rk5o9', 'template_bqck3jj', form.current, 'y39rgdxN9zq_rfi5a')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+      
+        setFormData({
+          from_name: '',
+          from_email: '',
+          message: ''
+        });
+      };
 
   return (
     <main name='contact' className='first_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-3'>
-   
-    
+
         <Fade cascade duration={70} className='text-4xl font-bold inline border-b-4 border-b-violet-600 text-white'>
              𝑮𝒆𝒕 𝒊𝒏 𝒕𝒐𝒖𝒄𝒉
         </Fade>
@@ -61,9 +63,7 @@ import { Fade } from "react-awesome-reveal";
                 <span className='text-sm ml-4  break-words'>mummatov73@gmail.com</span>
               
               </div>
-      
-
-        <Fade duration={2000}>
+    
           <form className='flex flex-col max-w-[500px] space-y-6 w-full p-2' ref={form} onSubmit={sendEmail}>
                 <div className='flex justify-center space-y-1 space-x-[-20px]'>
                     <FaPerson className=" text-2xl text-white" />
@@ -83,9 +83,9 @@ import { Fade } from "react-awesome-reveal";
                         </button>
                 </div>
             </form>
-           </Fade>
         </div>
     </main>
   );
 };
 export default Contact;
+
