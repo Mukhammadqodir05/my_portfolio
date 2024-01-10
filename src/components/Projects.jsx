@@ -19,7 +19,7 @@ const Projects = () => {
         <div className="grid  md:grid-cols-2 gap-10"> 
         <Fade>
          <div className='p-5 border h-full border-gray-500 rounded-xl w-full max-w-[400px] justify-center items-center my_image'>
-          <img className="rounded-t w-full max-w-[400px]" src={weather} alt="" />
+          <img className="rounded-xl w-full max-w-[400px]" src={weather} alt="" />
           <h1 className='font-serif font-bold text-xl mt-3 text-[#f800ba]'>Weather App</h1>
           <div className='flex text-left'>
             <span>A weather app built using React that allows users to search for current weather conditions in any city around the world. This project helped me improve my skills in React and API integration.</span>
