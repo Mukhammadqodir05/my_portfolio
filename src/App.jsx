@@ -13,7 +13,7 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <motion.main name='home' className="home overflow-x-hidden"
+    <motion.main name='home' className=" home overflow-x-hidden"
       initial = {{opacity:0}}
       animate ={{opacity:1}}
       exit={{opacity:0}}
@@ -32,7 +32,7 @@ function App() {
             <StarsCanvas />
           </div>
            <Services />
-           {/* <Projects/> */}
+           <Projects/>
            <Contact />
            <Footer/> 
 </motion.main>   

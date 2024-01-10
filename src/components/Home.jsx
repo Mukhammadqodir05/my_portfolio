@@ -20,7 +20,7 @@ const Home = () => {
                   <Link to='about' spy={true} smooth={true} duration={400}>  
                     <button className='h1 text-white rounded-md border p-2 w-[120px]'>𝑨𝒃𝒐𝒖𝒕 𝒎𝒆✔️</button>
                   </Link>
-                  <Link to='projects' spy={true} smooth={true} duration={400}>
+                  <Link to='projects' spy={true} smooth={true} offset={-30} duration={400}>
                       <button className='h1  text-white rounded-md border p-2 w-[120px]'>𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔 ✔️</button>
                   </Link>
              </div>

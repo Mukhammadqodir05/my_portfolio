@@ -36,14 +36,13 @@ const Services = () => {
           loop:true
         }}
         pagination={{
-          type: 'fraction',
+          clickable: true,
         }}
         modules={[EffectCube, Pagination, Autoplay]}
         className="mySwiper">
 
    
        <div className='flex  pt-40 w-full flex-col lg:grid lg:grid-cols-4 lg:space-x-10 lg:w-full space-y-7 md:space-y-0 p-40 '>
-         
           <SwiperSlide>
             <div className='flex border-cyan-500 flex-col items-center space-y-5 h-[420px] w-full border p-8 rounded-md max-w-[400px]'>
               <img className='rounded-md shadow-xl shadow-[#000000] h-[80px] w-[100px]' src={webdev} />
@@ -100,7 +99,7 @@ const Services = () => {
            </div>
           </SwiperSlide>
             </div>
-      </Swiper>
+          </Swiper>
        </Fade>                                                 
     </main>
   )

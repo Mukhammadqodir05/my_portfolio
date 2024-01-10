@@ -15,7 +15,7 @@ const About = () => {
        <Fade duration={2000}>
          <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[600px] border rounded-md p-4'>
           <Bounce>
-            <img className="md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage}/>
+            <img className="w-full md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage}/>
           </Bounce>
 
             <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
