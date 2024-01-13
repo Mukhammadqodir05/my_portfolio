@@ -23,15 +23,15 @@ const Home = () => {
                   <Link to='projects' spy={true} smooth={true} offset={-30} duration={400}>
                       <button className='h1  text-white rounded-md border p-2 w-[120px]'>𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔 ✔️</button>
                   </Link>
-             </div>
-          </ul>
-       </Fade>
-      <JackInTheBox duration={1200}>
-         <div className='flex justify-center'>
+               </div>
+            </ul>
+            </Fade>
+            <JackInTheBox duration={1200}>
+             <div className='flex justify-center'>
               <img className='img rounded-md border-gray-300 lg:max-w-[510px] md:max-w-[500px]' src={Snap} alt="" />
-          </div>
-        </JackInTheBox>
-      </div>
+            </div>
+          </JackInTheBox>
+       </div>
     </main>
   );
 };

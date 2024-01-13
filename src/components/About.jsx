@@ -5,7 +5,6 @@ import { FaGithub, FaTwitter, FaYoutube, FaLinkedin} from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from 'react-awesome-reveal';
 
-
 const About = () => { 
 
   return (

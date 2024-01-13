@@ -5,7 +5,6 @@ import weather from '/src/assets/projects/weather.png';
 import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
-
   return (
     <main name='projects' 
        className='flex flex-col justify-center items-center second_color lg:h-screen h-full w-full p-3 text-center text-white'>
@@ -15,7 +14,6 @@ const Projects = () => {
             <p className='py-6'>These are some of my recent projects</p>
           </div>
         </Fade>
-        
         <div className="grid  md:grid-cols-2 gap-10"> 
         <Fade>
          <div className='p-5 border h-full border-gray-500 rounded-xl w-full max-w-[400px] justify-center items-center my_image'>
@@ -43,7 +41,6 @@ const Projects = () => {
           </div>
         </div>
         </Fade>
-
         <Fade>
           <div className='p-5 border border-gray-500 rounded-xl w-full h-full max-w-[400px] justify-center items-center my_image'>
             <img className="w-full rounded-xl" src={mercedes} alt="" />
@@ -67,9 +64,8 @@ const Projects = () => {
                   Github Repo <FaGithub className='ml-2' />
                 </a>
               </div>
-          </div>
+            </div>
           </Fade>
-
        </div>
     </main>
   );

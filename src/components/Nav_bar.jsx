@@ -83,17 +83,15 @@ const Nav_bar = () => {
                         Contact
                     </li>
                 </Link>
-
             </ul>
-        )}
+         )}
         </div>
-
         <button className='CV rounded-md px-2 h-[30px] w-[90px]'>
               <Link onClick={hClick} to='contact' spy={true} smooth={true}  duration={400}>
                   Hire me
              </Link>
         </button>
-        
+
         <div className='flex CV justify-between rounded-md px-2  h-[30px] w-[150px]  bg-slate-700'>
              <button>Download CV </button>
               <FiDownloadCloud  className=' mt-1 text-2xl '/>
