@@ -7,10 +7,10 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <main name='projects' 
-       className='flex flex-col justify-center items-center second_color lg:h-screen h-full w-full p-3 text-center text-white'>
-        <Fade>
+       className='flex flex-col justify-center items-center first_color lg:h-screen h-full w-full p-3 text-center text-white'>
+        <Fade cascade duration={70}>
           <div>
-            <h1 className='text-4xl font-bold inline border-b-4 border-violet-500'>𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔</h1>
+            <Fade cascade duration={70} className='text-4xl font-bold inline border-b-4 border-violet-500'>𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔</Fade>
             <p className='py-6'>These are some of my recent projects</p>
           </div>
         </Fade>

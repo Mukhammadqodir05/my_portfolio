@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <main name='contact' className='first_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-3'>
+    <main name='contact' className='second_color space-y-7 main w-full h-screen flex justify-center flex-col items-center p-3'>
       <Fade cascade duration={70} className='text-4xl font-bold inline border-b-4 border-b-violet-600 text-white'>
         𝑮𝒆𝒕 𝒊𝒏 𝒕𝒐𝒖𝒄𝒉
       </Fade>

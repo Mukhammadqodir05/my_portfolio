@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { FcHome } from 'react-icons/fc';
 import { Fade, JackInTheBox } from "react-awesome-reveal";
@@ -25,8 +25,8 @@ const Footer = () => {
             <a href="https://github.com/Muhammadqodir001" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
               <FaGithub />
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
-              <FaTwitter />
+            <a href="https://t.me/Mukhammadqodir" target="_blank" rel="noopener noreferrer"  className="md:hover:scale-110 duration-300">
+              <FaTelegram />
             </a>
             <a href="https://www.youtube.com/@MasterProgrammingLanguages" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
               <FaYoutube />

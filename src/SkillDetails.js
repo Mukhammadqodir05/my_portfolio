@@ -9,7 +9,7 @@ import nextjs from '/src/assets/nextjs.png'
 import firebase from '/src/assets/firebase.png'
 import mongoDB from '/src/assets/mongoDB.png'
 import Python from '/src/assets/Python.png'
-import Appwrite from '/src/assets/Appwrite.png'
+import Wordpress from'/src/assets/Wordpress.png'
 
 const SkillData = [
     {
@@ -67,8 +67,8 @@ const SkillData = [
         SkillImage: Python
      },{
         id:12,
-        SkillName:'Appwrite',
-        SkillImage: Appwrite
+        SkillName:'WordPress',
+        SkillImage: Wordpress
      }
 ]
 
