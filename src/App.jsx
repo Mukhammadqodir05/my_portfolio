@@ -11,6 +11,7 @@ import { motion, useScroll } from "framer-motion"
 
 function App() {
   const { scrollYProgress } = useScroll();
+  
   return (
     <motion.main
       name='home'

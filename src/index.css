@@ -85,7 +85,7 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to left top, #0d1623, #0e1e38, #16244d, #262961, #3d2c73);
+  background-image: linear-gradient(to right top, #4e3543, #5f3051, #6d2b62, #782477, #7f1d8f, #7a279b, #7431a7, #6b3ab3, #6047af, #5952a8, #565a9f, #576095);
   height: 100%;
   width: 100%;
   display: flex;
