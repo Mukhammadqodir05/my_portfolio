@@ -34,7 +34,7 @@ Navigate through the different sections of the portfolio website to view my proj
 - Contact form
 
 ## Screenshots
-/![alt text](myPortfolio.png)
+![alt text](myPortfolio.png)
 
 ## Contributing
 1. Fork the repository
