@@ -7,6 +7,7 @@ import { Blurhash } from 'react-blurhash';
 
 const Projects = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded2, setImageLoaded2] = useState(false);
 
   return (
     <main name='projects' 
@@ -50,10 +51,10 @@ const Projects = () => {
         </Fade>
         <Fade>
           <div className='p-5 border border-gray-500 rounded-xl w-full h-full max-w-[400px] justify-center items-center my_image'>
-          {!imageLoaded && <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={300} height={200} />}
+          {!imageLoaded2 && <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={300} height={200} />}
             <img className="w-full rounded-xl" src={weather} 
-              onLoad={() => setImageLoaded(true)}
-              style={{ display: imageLoaded ? 'block' : 'none' }}
+              onLoad={() => setImageLoaded2(true)}
+              style={{ display: imageLoaded2 ? 'block' : 'none' }}
              />
               <h1 className='font-serif font-bold text-xl mt-3 text-[#f800ba]'>Mercedes-Benz Dashboard</h1>
               <div className='flex text-left'>

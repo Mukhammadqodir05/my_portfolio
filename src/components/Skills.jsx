@@ -35,7 +35,7 @@ const Skills = () => {
                 {imageLoaded ? (
                   <img className='max-w-[120px] rounded-xl' src={data.SkillImage} alt={data.SkillName} />
                 ) : (
-                  <Blurhash hash="egC5D{JA=kNd-GsroLj?o1ay$;a#WSoMR~s=jtf6j[j@$pWWWTa}WT" width={120} height={120} punch={1} />
+                  <Blurhash hash="e93n9tkCL#ayfPkCVYaekWfQL#aeo~f6pJaxu5fQVYkCQmkCuPkCQl" width={120} height={120} punch={1} />
                 )}
                 <p className='my-4'>{data.SkillName}</p>
               </div>
