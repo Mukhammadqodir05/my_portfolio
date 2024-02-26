@@ -1,4 +1,4 @@
-import Nav_bar from "./components/Nav_bar";
+import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from './components/About'
 import Skills from'./components/Skills'
@@ -24,7 +24,7 @@ function App() {
         className="fixed rounded-md mt-[70px] h-[5px] right-0 left-0 origin-[0%] bg-[#a601ff]"
         style={{ scaleX: scrollYProgress }}
       />
-      <Nav_bar />
+      <NavBar />
       <Home />
       <About />
       <div className="relative z-0">

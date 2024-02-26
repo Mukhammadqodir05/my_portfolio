@@ -1,7 +1,7 @@
 import React from 'react';
 import myImage from '/src/assets/myImage.jpg'
 import {Link} from 'react-scroll'
-import { FaGithub, FaYoutube, FaLinkedin, FaTelegram} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram} from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from 'react-awesome-reveal';
 
@@ -9,7 +9,6 @@ const About = () => {
 
   return (
     <main name='about' className="second_color h-full md:h-[900px] md:pb-20 md:pt-[200px] pb-10 lg:h-screen flex w-full justify-center items-center p-3 lg:pt-40 pt-28">   
-     
       <div className='lg:max-w-[1100px] w-full flex md:px-5 md:gap-10 lg:space-x-[-30px] lg:px-4 space-y-10 flex-col items-center text-center justify-center md:grid md:grid-cols-2'>
        <Fade duration={2000}>
          <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[600px] border rounded-md p-4'>
@@ -18,23 +17,16 @@ const About = () => {
             </Bounce>
              <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
                <Fade cascade  duration={70} className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 
-                <div className="flex text-4xl justify-center mt-16 space-x-7 lg:space-x-9 md:text-5xl">
-                  <a href="https://github.com/Muhammadqodir001" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+                <div className="flex w-full justify-center mt-16 space-x-10 text-5xl">
+                  <a href="https://github.com/Mukhammadqodir05" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
                     <FaGithub />
                   </a>
-                  <a href="https://t.me/Mukhammadqodir" target="_blank" rel="noopener noreferrer"  className="md:hover:scale-110 duration-300">
-                   <FaTelegram />
-                  </a>
-                  <a href="https://www.youtube.com/@MasterProgrammingLanguages
-                    " target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
-                    <FaYoutube />
-                  </a>
-                  <a href="https://www.linkedin.com/in/muhammadqodir-developer/" 
+                  <a href="https://www.linkedin.com/in/mukhammadqodir" 
                     target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
                     <FaLinkedin />
                   </a>
                  </div>
-                 <Link className='mt-[35px] md:mt-[50px] lg:mt-[20px] py-3' to='contact' spy={true} smooth={true}  duration={400}>
+                 <Link className='mt-[15px] md:mt-[35px] lg:mt-[10px] py-3' to='contact' spy={true} smooth={true}  duration={400}>
                      <button className='h1 rounded-xl py-3 px-10'>Contact me</button>
                 </Link>
                </div>

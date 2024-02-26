@@ -5,7 +5,7 @@ import {AiOutlineCaretUp, AiOutlineCaretDown} from 'react-icons/ai'
 import { FiDownloadCloud } from "react-icons/fi";
 import gsap from "gsap";
 
-const Nav_bar = () => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const[is_hoverOpen, setHoverOpen] = useState(false);
   const [nav, setNav] = useState(false);
@@ -70,7 +70,7 @@ const Nav_bar = () => {
                     <Link onClick={hClick} to='contact' spy={true} smooth={true}  duration={400}>Hire me</Link>
                 </button>
                 <div className='flex CV justify-between rounded-md px-2 h-[30px] w-[150px] bg-slate-700'>
-                    <a href='/src/components/resume.text' download='resume.text'>
+                    <a href='/src/assets/MyCV/Mukhammadqodir Ummatov_Resume.pdf' download='Mukhammadqodir Ummatov_Resume.pdf'>
                         <button>Download CV</button>
                     </a>
                     <FiDownloadCloud className='mt-1 text-2xl' />
@@ -88,8 +88,10 @@ const Nav_bar = () => {
                   </button>
                </li>
                 <li className='flex CV justify-between rounded-md px-2  h-[30px] w-[150px] bg-slate-700'>
-                    <button className=''>Download CV </button>
-                    <FiDownloadCloud  className=' mt-1 text-2xl '/>
+                    <a href='/src/assets/MyCV/Mukhammadqodir Ummatov_Resume.pdf' download='Mukhammadqodir Ummatov_Resume.pdf'>
+                            <button>Download CV</button>
+                    </a>
+                    <FiDownloadCloud className='mt-1 text-2xl' />
                 </li>
             <div className='md:hidden'>
                 <button className='relative' onClick={() => setIsOpen((isOpen) => !isOpen)}>
@@ -127,7 +129,7 @@ const Nav_bar = () => {
      </main>
   );
 };
-export default Nav_bar;
+export default NavBar;
 
 
 

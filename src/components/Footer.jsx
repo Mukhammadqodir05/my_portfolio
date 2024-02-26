@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaYoutube, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { FcHome } from 'react-icons/fc';
 import { Fade, JackInTheBox } from "react-awesome-reveal";
@@ -22,16 +22,13 @@ const Footer = () => {
         </Fade>
         <Fade>
           <div className="flex justify-center space-x-8 text-3xl">
-            <a href="https://github.com/Muhammadqodir001" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+            <a href="https://github.com/Mukhammadqodir05" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
               <FaGithub />
             </a>
             <a href="https://t.me/Mukhammadqodir" target="_blank" rel="noopener noreferrer"  className="md:hover:scale-110 duration-300">
               <FaTelegram />
             </a>
-            <a href="https://www.youtube.com/@MasterProgrammingLanguages" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
-              <FaYoutube />
-            </a>
-            <a href="https://www.linkedin.com/in/muhammadqodir-developer/" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
+            <a href="https://www.linkedin.com/in/mukhammadqodir/" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
               <FaLinkedin />
             </a>
           </div>
