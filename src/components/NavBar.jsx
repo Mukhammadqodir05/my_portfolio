@@ -88,10 +88,12 @@ const NavBar = () => {
                   </button>
                </li>
                 <li className='flex CV justify-between rounded-md px-2  h-[30px] w-[150px] bg-slate-700'>
+                <div className='flex CV justify-between rounded-md px-2 h-[30px] w-[150px] bg-slate-700'>
                     <a href='/src/assets/MyCV/Mukhammadqodir Ummatov_Resume.pdf' download='Mukhammadqodir Ummatov_Resume.pdf'>
-                            <button>Download CV</button>
+                        <button>Download CV</button>
                     </a>
                     <FiDownloadCloud className='mt-1 text-2xl' />
+                </div>
                 </li>
             <div className='md:hidden'>
                 <button className='relative' onClick={() => setIsOpen((isOpen) => !isOpen)}>
