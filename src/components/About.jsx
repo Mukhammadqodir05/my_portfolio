@@ -1,11 +1,16 @@
 import React from 'react';
 import myImage from '/src/assets/myImage.jpg'
 import {Link} from 'react-scroll'
-import { FaGithub, FaLinkedin, FaTelegram} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from 'react-awesome-reveal';
+import { Blurhash } from 'react-blurhash';
+import UseImageLoader from './useImageLoader';
 
 const About = () => { 
+  const imageLoaded = UseImageLoader(myImage);
+
+
 
   return (
     <main name='about' className="second_color h-full md:h-[900px] md:pb-20 md:pt-[200px] pb-10 lg:h-screen flex w-full justify-center items-center p-3 lg:pt-40 pt-28">   
@@ -13,7 +18,20 @@ const About = () => {
        <Fade duration={2000}>
          <div className='flex border-cyan-500 flex-col pb-10 my_image w-full max-w-[400px] md:max-w-[350px] lg:max-w-[400px] h-full max-h-[600px] border rounded-md p-4'>
           <Bounce>
-            <img className="w-full md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage}/>
+           {!imageLoaded ? (
+            <div className='flex max-w-[200xp]'>
+             <Blurhash
+                  hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
+                  width={350}
+                  height={300}
+                  resolutionX={32}
+                  resolutionY={32}
+                  punch={1}
+                />
+              </div>
+              ) : (
+                <img className="w-full md:max-w-[350px] lg:ml-2 flex items-center justify-center text-center max-h-[350px] p-4 rounded-tl-[8%] rounded-br-[8%] mt-[-10px]" src={myImage} />
+              )}
             </Bounce>
              <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
                <Fade cascade  duration={70} className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 

@@ -1,21 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Snap from '/src/assets/Snap.png';
 import { Link } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 import { JackInTheBox } from 'react-awesome-reveal';
 import { Blurhash } from 'react-blurhash';
+import UseImageLoader from './useImageLoader';
 
 const Home = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const imageLoaded = UseImageLoader(Snap);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = Snap;
-
-    img.onload = () => {
-      setImageLoaded(true);
-    };
-  }, []);
 
   return (
     <main className='first_color flex justify-center items-center h-screen w-full pt-36 lg:pt-10 p-3'>
@@ -38,17 +31,16 @@ const Home = () => {
           </ul>
         </Fade>
         <JackInTheBox duration={1200}>
-          <div className='flex justify-center'>
-            {!imageLoaded ? (
-              <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={450} height={450} />
-            ) : (
+         <div className='flex justify-center'>
+           <div style={{ display: imageLoaded ? 'none': 'inline'}}>
+              <Blurhash hash="egC5D{JA=kNd-GsroLj?o1ay$;a#WSoMR~s=jtf6j[j@$pWWWTa}WT" width={400} height={400}  punch={1}/>
+            </div>
               <img
-                onLoad={() => setImageLoaded(true)}
                 className='img rounded-md border-gray-300 lg:max-w-[510px] md:max-w-[500px]'
                 src={Snap}
+                style={{ display: !imageLoaded ? 'none': 'inline'}}
                 alt=''
               />
-            )}
           </div>
         </JackInTheBox>
       </div>

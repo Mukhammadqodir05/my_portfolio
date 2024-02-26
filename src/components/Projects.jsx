@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import mercedes from '/src/assets/projects/mercedes.png';
 import weather from '/src/assets/projects/weather.png';
 import { Fade } from "react-awesome-reveal";
+import { Blurhash } from 'react-blurhash';
 
 const Projects = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <main name='projects' 
        className='flex flex-col justify-center items-center first_color lg:h-screen h-full w-full p-3 text-center text-white'>
@@ -17,7 +20,11 @@ const Projects = () => {
         <div className="grid  md:grid-cols-2 gap-10"> 
         <Fade>
          <div className='p-5 border h-full border-gray-500 rounded-xl w-full max-w-[400px] justify-center items-center my_image'>
-          <img className="rounded-xl w-full max-w-[400px]" src={weather} alt="" />
+         {!imageLoaded && <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={300} height={200} />}
+            <img className="w-full rounded-xl max-w-[450px]" src={mercedes} 
+              onLoad={() => setImageLoaded(true)}
+              style={{ display: imageLoaded ? 'block' : 'none' }}
+             />
           <h1 className='font-serif font-bold text-xl mt-3 text-[#f800ba]'>Weather App</h1>
           <div className='flex text-left'>
             <span>A weather app built using React that allows users to search for current weather conditions in any city around the world. This project helped me improve my skills in React and API integration.</span>
@@ -43,7 +50,11 @@ const Projects = () => {
         </Fade>
         <Fade>
           <div className='p-5 border border-gray-500 rounded-xl w-full h-full max-w-[400px] justify-center items-center my_image'>
-            <img className="w-full rounded-xl" src={mercedes} alt="" />
+          {!imageLoaded && <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={300} height={200} />}
+            <img className="w-full rounded-xl" src={weather} 
+              onLoad={() => setImageLoaded(true)}
+              style={{ display: imageLoaded ? 'block' : 'none' }}
+             />
               <h1 className='font-serif font-bold text-xl mt-3 text-[#f800ba]'>Mercedes-Benz Dashboard</h1>
               <div className='flex text-left'>
                 <span>A custom dashboard designed and developed for Mercedes-Benz's new line of vehicles. This project helped me improve my skills in UI/UX design and front-end development.</span>
