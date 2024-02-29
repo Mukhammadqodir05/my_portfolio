@@ -1,5 +1,8 @@
 # My React Portfolio
 
+## Check Out the Demo
+Explore Trendmedia: Demo Link (https://mukhammadqodir.vercel.app/)
+
 ## Description
 My React Portfolio encompasses a display of my projects and expertise as a developer. It consists of a home page, an about me section, a skills page, a services page, and a contact form.
 
