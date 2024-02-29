@@ -9,6 +9,7 @@ import typescript from '/src/assets/typescript.png'
 import github from '/src/assets/github.png'
 import firebase from '/src/assets/firebase.png'
 import Python from '/src/assets/Python.png'
+import Docker from '/src/assets/Docker.png' 
 
 
 const SkillData = [
@@ -68,6 +69,11 @@ const SkillData = [
         id: 11,
         SkillName:'Python',
         SkillImage: Python
+    },
+    {
+        id: 12,
+        SkillName:'Docker',
+        SkillImage: Docker
     }
 ]
 

@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const formRef = useRef();
+  const [formData, setFormData] = useState({ senderName: '', senderEmail: '', message: '' });
 
   const showSuccessMessage = () => {
     Swal.fire(
@@ -13,13 +14,7 @@ const Contact = () => {
       'success'
     );
   }
-
-  const [formData, setFormData] = useState({
-    senderName: '',
-    senderEmail: '',
-    message: ''
-  });
-
+  
   const { senderName, senderEmail, message } = formData;
 
   const handleInputChange = (e) => {
@@ -34,17 +29,16 @@ const Contact = () => {
   
     emailjs.sendForm('service_91rk5o9', 'template_bqck3jj', formRef.current, 'y39rgdxN9zq_rfi5a')
       .then((result) => {
-        console.log(result.text);
         showSuccessMessage();
+        console.log(result.text);
+        setFormData({
+          senderName: '',
+          senderEmail: '',
+          message: ''
+        });
       }, (error) => {
         console.log(error.text);
       });
-  
-    setFormData({
-      senderName: '',
-      senderEmail: '',
-      message: ''
-    });
   };
 
   return (
