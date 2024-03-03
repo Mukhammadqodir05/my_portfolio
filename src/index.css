@@ -4,7 +4,7 @@
 
 body {
   color: #ffffff;
-  background: rgb(0, 0, 0);
+  background-image: linear-gradient(to right top, #1a1130, #1b1132, #1c1034, #1d1035, #1e0f37, #1e0f37, #1e0f37, #1e0f37, #1c0f35, #1b0f34, #190f32, #180f30);
 }
 
 .my_image{
@@ -60,6 +60,8 @@ body {
         max-width: 75%;
     }
   }
+
+
  
 .first_color{
   background-image: linear-gradient(to right top, #1a1130, #1b1132, #1c1034, #1d1035, #1e0f37, #1e0f37, #1e0f37, #1e0f37, #1c0f35, #1b0f34, #190f32, #180f30);
@@ -175,3 +177,40 @@ body {
     }
 }
 
+
+/* Gradient border */
+.gradient-border {
+  --borderWidth: 2px; /* Adjust this value to change the border width */
+  position: relative;
+}
+
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(45deg, #833AB4, #405DE6, #833AB4, #C13584, #405DE6, #833AB4, #E1306C);
+  border-radius: inherit; 
+  z-index: -1;
+  animation: animatedgradient 2s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, #F9008E, #F733A2, #F44CB4, #F060C6, #EB71D5, #E373DD, #DB76E4, #D179EB, #C071EF, #AD6AF2, #9664F7, #785FFB);
+}

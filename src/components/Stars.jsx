@@ -7,7 +7,7 @@ const Stars = (props) => {
   const ref = useRef();
 
   const [sphere] = useState(() => {
-    const positions = random.inSphere(new Float32Array(5000), { radius: 1.5 });
+    const positions = random.inSphere(new Float32Array(25000), { radius: 1.5 });
     const validPositions = positions.map(p => (isNaN(p) || p === Infinity || p === -Infinity) ? 0 : p);
     
     return validPositions;

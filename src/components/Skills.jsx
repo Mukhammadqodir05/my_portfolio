@@ -22,7 +22,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <main name='skills' className='main flex items-center pb-10 justify-center w-full h-full text-white p-3'>
+    <main name='skills' className='main bg-black bg-opacity-60 flex items-center pb-10 justify-center w-full h-full text-white p-3'>
       <div className="lg:max-w-[1400px] py-8 items-center text-center justify-center w-full h-full">
         <div className='py-10'>
           <Fade cascade duration={70} className='text-4xl font-bold inline border-b-4 border-violet-500'>💪🏻𝑺𝒌𝒊𝒍𝒍𝒔💪🏻</Fade>

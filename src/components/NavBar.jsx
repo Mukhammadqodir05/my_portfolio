@@ -16,6 +16,7 @@ const NavBar = () => {
     window.location.reload();
     window.location.href = '/main';
   };
+
   useEffect(() => {
     gsap.fromTo(
       ".logo-namenav",
@@ -25,7 +26,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <main name='top' className='navbar second_color md:px-10 lg:px-20 fixed text-white bg h-[70px] w-full z-10 flex justify-between items-center py-2'>
+    <main name='top' className='navbar first_color md:px-10 lg:px-20 fixed text-white bg h-[70px] w-full z-10 flex justify-between items-center py-2'>
       <div onClick={handleLogoClick} className="z-10 p-4 flex justify-between" >
         <div className='logo-namenav text-3xl pr-2'>&lt;/</div>  
           <svg  id="nav_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -43,6 +44,7 @@ const NavBar = () => {
              <AiOutlineCaretDown className='absolute ml-16 mt-[-16px]' />
              )}
            </button>
+
            {is_hoverOpen &&   (
             <ul onMouseLeave={() => setHoverOpen(false)} className='dropdown_menu shadow-2xl shadow-black absolute mt-1 text-black bg-white w-[250px] border-[2px] pb-1 pt-1 rounded-md md:right-[175px] lg:right-[215px]'>
               <div className='absolute top-[-10px] left-[10%] border-l-[10px] border-r-[10px] border-b-[10px] border-b-white border-transparent'></div>
@@ -70,13 +72,12 @@ const NavBar = () => {
                 <button className='CV rounded-md px-2 h-[30px] w-[90px]'>
                     <Link onClick={hClick} to='contact' spy={true} smooth={true}  duration={400}>Hire me</Link>
                 </button>
-                <div className='flex CV justify-between rounded-md px-2 h-[30px] w-[150px] bg-slate-700'>
+                <div className='flex items-center CV justify-between rounded-md px-2 h-[30px] w-[150px] bg-slate-700'>
                   <a href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
                         <button>Download CV</button>
                     </a>
                     <FiDownloadCloud className='mt-1 text-2xl' />
                 </div>
-
             </div>
             <div className="md:hidden cursor-pointer z-10 px-4 text-4xl"  onClick={hClick} >
                 {!nav ? <FaBars className='icon text-3xl'/> :  <FaTimes className="text-3xl " />}
@@ -88,7 +89,7 @@ const NavBar = () => {
                     <Link onClick={hClick} to='contact' spy={true} smooth={true} duration={400}>Hire me</Link>
                   </button>
                </li>
-                <li className='flex CV justify-between rounded-md px-2  h-[30px] w-[150px] bg-slate-700'>
+                <li className='flex items-center CV justify-between rounded-md px-2  h-[30px] w-[150px] bg-slate-700'>
                   <a href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
                         <button>Download CV</button>
                     </a>

@@ -57,7 +57,7 @@ const Projects = () => {
 
 const ProjectCard = ({ image, imageLoaded, setImageLoaded, title, liveLink, githubLink }) => {
   return (
-    <div className='p-5 border h-full border-gray-500 rounded-xl w-full max-w-[400px] justify-center items-center my_image'>
+    <div className='p-5 gradient-border h-full w-full max-w-[400px] justify-center items-center my_image rounded-2xl'>
       {!imageLoaded && <Blurhash hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={350} height={200} />}
       <img
         className="w-full rounded-xl max-w-[450px]"
@@ -66,7 +66,7 @@ const ProjectCard = ({ image, imageLoaded, setImageLoaded, title, liveLink, gith
         style={{ display: imageLoaded ? 'block' : 'none' }}
         alt={title}
       />
-      <h1 className='font-serif font-bold text-xl mt-3 text-[#f800ba]'>{title}</h1>
+      <h1 className='font-serif  font-bold text-xl mt-3 text-[#f800ba]'>{title}</h1>
       <div className='flex justify-between mt-5'>
         <a href={liveLink} target="_blank" rel="noreferrer">
           See Live <FaExternalLinkAlt className='ml-2' />
