@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import mercedes from '/src/assets/projects/mercedes.png';
 import weather from '/src/assets/projects/weather.png';
-import Trendmedia from '/src/assets/Trendmedia.png'
+import Trendmedia from '/src/assets/projects/Trendmedia.png'
 import { Fade } from "react-awesome-reveal";
 import { Blurhash } from 'react-blurhash';
 
