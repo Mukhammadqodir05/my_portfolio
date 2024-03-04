@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="footer-container mb-5 md:mb-0 w-full flex flex-col justify-center md:px-5">
         <Fade>
           <div className="text-lg">
-            <h1 className="py-4">©️ 2023 Muhammadqodir. All rights reserved.</h1>
+            <h1 className="py-4">©️ 2024 Mukhammadqodir. All rights reserved.</h1>
           </div>
         </Fade>
         <Fade>

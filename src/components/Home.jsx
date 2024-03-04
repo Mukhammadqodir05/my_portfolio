@@ -17,7 +17,7 @@ const Home = () => {
           <ul className='flex flex-col justify-center items-center'>
             <Fade cascade duration={70} className='hi flex font-extrabold md:text-7xl lg:text-7xl text-[#fff] pr-2 md:pl-[65px]'>𝑯𝒊 𝒕𝒉𝒆𝒓𝒆👋🏻</Fade>
             <div className='flex flex-col mt-2 md:pr-4'>
-              <span className='span text-2xl md:text-3xl text-start md:pr-5 pr-2 font-extrabold'>𝐈'𝐦 𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝𝐪𝐨𝐝𝐢𝐫</span>
+              <span className='span text-2xl md:text-3xl text-start md:pr-5 pr-2 font-extrabold'>𝐈'𝐦 𝐌𝐮𝐤𝐡𝐚𝐦𝐦𝐚𝐝𝐪𝐨𝐝𝐢𝐫</span>
               <span className='span text-xl md:text-2xl text-start font-bold text-violet-500'>𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</span>
             </div>
             <div className='flex space-x-16 mt-14 md:mr-10'>

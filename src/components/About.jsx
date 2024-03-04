@@ -32,7 +32,7 @@ const About = () => {
               )}
             </Bounce>
              <div className='flex text-white flex-col flex-shrink-0 text-center justify-center px-2 '>
-               <Fade cascade duration={70} className='text-2xl'>𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 
+               <Fade cascade duration={70} className='text-2xl'>𝑴𝒖𝒌𝒉𝒂𝒎𝒎𝒂𝒅𝒒𝒐𝒅𝒊𝒓</Fade> 
                 <div className="flex w-full justify-center mt-16 space-x-10 text-5xl">
                   <a href="https://github.com/Mukhammadqodir05" target="_blank" rel="noopener noreferrer" className="md:hover:scale-110 duration-300">
                     <FaGithub />
@@ -51,7 +51,7 @@ const About = () => {
             <Fade duration={2000}>
              <div className='lg:max-w-[450px] w-full max-w-[400px] justify-center text-left space-y-3 items-center flex flex-col border-cyan-500 '>
                 <Fade cascade duration={70} className='inline border-b-4 border-b-violet-600  font-extrabold text-center text-2xl'>☪️ 𝑺𝒆𝒍𝒇-𝑺𝒖𝒎𝒎𝒂𝒓𝒚 ☪️</Fade>
-                <span className='font-bold'>𝐇𝐞𝐥𝐥𝐨! 𝐈'𝐦 𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝𝐪𝐨𝐝𝐢𝐫, 𝐚 𝐩𝐚𝐬𝐬𝐢𝐨𝐧𝐚𝐭𝐞 𝐟𝐫𝐨𝐧𝐭-𝐞𝐧𝐝 𝐰𝐞𝐛 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫.</span>
+                <span className='font-bold'>𝐇𝐞𝐥𝐥𝐨! 𝐈'𝐦 𝐌𝐮𝐤𝐡𝐚𝐦𝐦𝐚𝐝𝐪𝐨𝐝𝐢𝐫, 𝐚 𝐩𝐚𝐬𝐬𝐢𝐨𝐧𝐚𝐭𝐞 𝐟𝐫𝐨𝐧𝐭-𝐞𝐧𝐝 𝐰𝐞𝐛 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫.</span>
                  <span>
                   I embarked on my journey into web development as an independent developer with no prior programming knowledge. After finding traditional learning methods too slow, I chose the self-learning path, enabling me to continuously adapt and learn new technologies as they emerge. My goal as a passionate web developer is to create visually captivating and highly functional user experiences across all devices, emphasizing design and a commitment to excellence for every project.
                  </span>
