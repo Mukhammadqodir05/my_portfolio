@@ -73,10 +73,10 @@ const NavBar = () => {
                     <Link onClick={hClick} to='contact' spy={true} smooth={true}  duration={400}>Hire me</Link>
                 </button>
                 <div className='flex items-center CV justify-between rounded-md px-2 h-[30px] w-[150px] bg-slate-700'>
-                  <a href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
+                  <a className='flex gap-2' href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
                         <button>Download CV</button>
-                    </a>
-                    <FiDownloadCloud className='mt-1 text-2xl' />
+                      <FiDownloadCloud className='mt-1 text-2xl' />
+                  </a>
                 </div>
             </div>
             <div className="md:hidden cursor-pointer z-10 px-4 text-4xl"  onClick={hClick} >
@@ -90,11 +90,10 @@ const NavBar = () => {
                   </button>
                </li>
                 <li className='flex items-center CV justify-between rounded-md px-2  h-[30px] w-[150px] bg-slate-700'>
-                  <a href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
+                  <a className='flex gap-2' href={Mukhammadqodir} download='MukhammadqodirUmmatov_resume.pdf'>
                         <button>Download CV</button>
-                    </a>
                     <FiDownloadCloud className='mt-1 text-2xl' />
-                
+                    </a>
                 </li>
             <div className='md:hidden'>
                 <button className='relative' onClick={() => setIsOpen((isOpen) => !isOpen)}>

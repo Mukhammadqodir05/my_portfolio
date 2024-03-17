@@ -46,11 +46,16 @@ const Contact = () => {
       <Fade cascade duration={70} className='text-4xl font-bold inline border-b-4 border-b-violet-600 text-white'>
         𝑮𝒆𝒕 𝒊𝒏 𝒕𝒐𝒖𝒄𝒉
       </Fade>
-      <div className='gradient-border second_color space-y-5 rounded-md flex flex-shrink-0 flex-col justify-center items-center md:max-w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>
-        <div className='flex flex-col'>
-          <h1 className='font-bold ml-2'>My Email Addresses:</h1>
-          <span className='text-sm ml-4 break-words'>mummah571@gmail.com</span>
-          <span className='text-sm ml-4 break-words'>mummatov73@gmail.com</span>
+       <div className='gradient-border second_color space-y-5 rounded-md flex flex-shrink-0 flex-col justify-center items-center md:max-w-[600px] h-[500px] max-w-[600px] w-full md:p-12 p-2 '>
+        <div className='flex gap-2'>
+          <div className='flex flex-col'>
+            <h1 className='font-bold ml-2'>My Email Address:</h1>
+            <span className='text-sm ml-4 break-words'>mummah571@gmail.com</span>
+          </div>
+          <div className='flex flex-col'>
+            <h1 className='font-bold ml-2'>My Phone Number:</h1>
+            <span className='text-sm ml-4 break-words'>+(998) 91 741-55-31</span>
+          </div>
         </div>
         <form className='flex flex-col max-w-[500px] space-y-6 w-full p-2 z-10 relative' ref={formRef} onSubmit={sendEmail}>
           <div className='flex rounded-full gradient-border second_color justify-center space-y-1 space-x-[-20px]'>

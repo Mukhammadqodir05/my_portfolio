@@ -180,7 +180,7 @@ body {
 
 /* Gradient border */
 .gradient-border {
-  --borderWidth: 2px; /* Adjust this value to change the border width */
+  --borderWidth: 2px; 
   position: relative;
 }
 
