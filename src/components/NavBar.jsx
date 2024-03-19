@@ -60,7 +60,7 @@ const NavBar = () => {
                 <Link to='services' spy={true} smooth={true} duration={400} >
                   <li className='duration-300 p-2 pl-4 hover:bg-gray-200 cursor-pointer w-full'>Services</li>
                 </Link>
-                <Link to='projects' spy={true} smooth={true} offset={-30} duration={400}>
+                <Link to='projects' spy={true} smooth={true} offset={-100} duration={400}>
                    <li className='duration-300 p-2 pl-4 hover:bg-gray-200 cursor-pointer w-full'>projects</li>
                 </Link>
                 <Link to='contact' spy={true} smooth={true}  duration={400}>

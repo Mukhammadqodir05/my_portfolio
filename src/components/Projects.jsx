@@ -3,6 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import mercedes from '/src/assets/projects/mercedes.png';
 import weather from '/src/assets/projects/weather.png';
 import Trendmedia from '/src/assets/projects/Trendmedia.png'
+import oqtepaLavash from '/src/assets/projects/oqtepaLavash.png'
 import { Fade } from "react-awesome-reveal";
 import { Blurhash } from 'react-blurhash';
 
@@ -10,6 +11,7 @@ const Projects = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageLoaded2, setImageLoaded2] = useState(false);
   const [imageLoaded3, setImageLoaded3] = useState(false);
+  const [imageLoaded4, setImageLoaded4] = useState(false);
 
   return (
     <main name='projects' className='flex flex-col justify-center items-center first_color lg:h-screen h-full w-full p-3 text-center text-white'>
@@ -19,7 +21,7 @@ const Projects = () => {
           <p className='py-6'>These are some of my recent projects</p>
         </div>
       </Fade>
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
        <Fade>
           <ProjectCard
             image={Trendmedia}
@@ -28,6 +30,16 @@ const Projects = () => {
             title="Social Media Platform"
             liveLink="https://trendmedia.vercel.app/"
             githubLink="https://github.com/Mukhammadqodir05/React-Social-Media-App"
+          />
+        </Fade>
+        <Fade>
+          <ProjectCard
+            image={oqtepaLavash}
+            imageLoaded={imageLoaded3}
+            setImageLoaded={setImageLoaded4}
+            title="Full-stack food ordering platform"
+            liveLink="https://oqtepa-lavash.vercel.app/"
+            githubLink="https://github.com/Mukhammadqodir05/Next.js-Oqtepa-Lavash"
           />
         </Fade>
         <Fade>
